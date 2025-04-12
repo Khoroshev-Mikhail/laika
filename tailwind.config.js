@@ -30,6 +30,8 @@ module.exports = {
       colors: {
         '_orange': '#FF5924',
         '_gray': '#252525',
+        '_blue': '#3466E0',
+        '_purple': '#41B7CF',
       },
     },
   },
