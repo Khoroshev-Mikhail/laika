@@ -1,0 +1,277 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0E111A;
+  height: 100%;
+  min-width: 320px !important;
+}
+._section {
+  @apply w-full
+}
+._wrapper {
+  @apply px-5 max-w-[1200px] mx-auto
+}
+
+._text-shadow{
+  filter: drop-shadow(0px 5px #000);
+}
+._text-shadow-2px{
+  /* text-shadow: 0px 2px #000, 0px -2px #FFF; */
+  filter: drop-shadow(0px 2px #000);
+}
+._text-shadow-footer{
+  @apply bg-gradient-to-b from-[#5B5B5B] via-[#2A2A2A] to-[#5B5B5B] inline-block  text-transparent bg-clip-text _text-shadow-2px
+}
+._h2 {
+  @apply text-[28px] xs:text-[36px] sm:text-[44px] md:text-[52px] lg:text-[60px] _text-shadow bg-gradient-to-r from-_orange to-[#FF932F] inline-block  text-transparent bg-clip-text  uppercase mb-[30px]
+}
+._24px{
+  @apply text-[16px] sm:text-[18px] md:text-[20px] xl:text-[24px] font-medium
+}
+._20px-extrabold{
+  @apply  font-extrabold text-[14px] sm:text-[16px] md:text-[18px] lg:text-[20px]
+}
+/* ._text-inner-shadow-white{
+  text-shadow: 1px 1px white, -1px -1px #444;
+} */
+._shadow{
+  box-shadow: 0 5px 0px 0px rgb(0 0 0 / 1), inset 0 3px 2px 0 rgb(255 255 255 / 0.4);
+}
+
+._phase1 {
+  position: relative;
+}
+._phase1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius:0px 35px 0px 0px; 
+  padding: 2px 2px 0px 0px; 
+  background:linear-gradient(135deg, #FFD96B 50%,#FFBC5B); /* rgba(255,0,0,0) */
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude; 
+}
+
+@media (max-width: 767px) {
+  ._phase1::before{
+    border-radius:0px 35px 35px 0px; 
+    padding: 2px 2px 2px 0px; 
+    background:linear-gradient(135deg, #FFEB74 50%,#FFBF5C);
+    
+  }
+}
+
+
+._phase2 {
+  position: relative;
+}
+._phase2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius:0px 0px 0px 35px; 
+  padding: 0px 0px 2px 2px; 
+  background:linear-gradient(135deg, #FFBC5B 50%,#FF642A); /* rgba(255,0,0,0) */
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude; 
+}
+
+@media (max-width: 767px) {
+  ._phase2::before{
+    border-radius:35px 0px 0px 35px; 
+    padding: 2px 0px 2px 2px; 
+    background:linear-gradient(135deg, #FFBF5C 50%, #FF9746);
+  }
+}
+
+._phase-none {
+  position: relative;
+}
+._phase-none::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius:0px 35px 0px 0px; 
+  padding: 2px 2px 0px 0px; 
+  background:linear-gradient(135deg, #FF9746 50%,#FF5F28); /* rgba(255,0,0,0) */
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude; 
+}
+
+
+._phase3 {
+  position: relative;
+}
+._phase3::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius:0px 0px 35px 35px; 
+  padding: 0px 2px 2px 2px; 
+  background:linear-gradient(135deg, #FF8B40 20%,#FF5924 20% 100%); /* rgba(255,0,0,0) */
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude; 
+}
+
+@media (max-width: 767px) {
+  ._phase3::before{
+    border-radius:0px 35px 35px 0px; 
+    padding: 2px 2px 2px 0px; 
+    background:linear-gradient(135deg, #FF9746 50%, #FF823B);
+  }
+}
+
+
+._phase4 {
+  position: relative;
+}
+._phase4::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius:0px 35px 0px 0px; 
+  padding: 2px 2px 0px 0px; 
+  background:linear-gradient(135deg, #FFD96B 30%,#FF7132); /* rgba(255,0,0,0) */
+  -webkit-mask: 
+     linear-gradient(#fff 0 0) content-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude; 
+}
+
+@media (max-width: 767px) {
+  ._phase4::before{
+    border-radius:35px 0px 0px 35px; 
+    padding: 2px 0px 2px 2px; 
+    background:linear-gradient(135deg, #FF823B 50%, #FF5A25);
+  }
+}
+@keyframes _animateRoadmap{
+  0%, 100% {
+    top: -25%;
+  }
+
+  50% {
+    top: 50%;
+  }
+}
+._animate-roadmap {
+  animation: _animateRoadmap 10s ease-in-out infinite;
+}
+@keyframes _moveUp{
+  0%, 100% {
+    top: 0;
+  }
+  
+  50% {
+    top: -25%;
+  }
+}
+
+._animate-moveUp {
+  animation: _moveUp 6s ease-in-out infinite;
+}
+
+
+@keyframes _mission{
+  0%, 100% {
+    bottom: -50%;
+  }
+  
+  50% {
+    bottom: -25%;
+  }
+}
+
+._animate-mission {
+  animation: _mission 10s ease-in-out infinite;
+}
+
+
+
+
+
+@keyframes _main{
+  0% { 
+    transform:rotate(0deg);  
+  }
+  
+  100% { 
+    transform:rotate(-20deg);
+    left: 5%;  
+    bottom: 5%;
+  }
+}
+
+._animate-main {
+  animation: _main 1.5s ease-in-out forwards;
+}
+
+@keyframes _lines-left{
+  0% { 
+    left: 20%  
+  }
+  
+  100% { 
+    left: 15%;
+  }
+}
+._animate-lines-left{
+  animation: _lines-left 1.5s ease-in-out forwards;
+}
+
+
+@keyframes _lines-right{
+  0% { 
+    right: 20%  
+  }
+  
+  100% { 
+    right: 15%;
+  }
+}
+._animate-lines-right{
+  animation: _lines-right 1.5s ease-in-out forwards;
+}
+
+@keyframes _lines-right-0-10{
+  0% { 
+    right: 20%  
+  }
+  
+  100% { 
+    right: 0%;
+  }
+}
+@keyframes _lines-left-0-10{
+  0% { 
+    left: 20%  
+  }
+  
+  100% { 
+    left: 0%;
+  }
+}
+
+@media (max-width: 767px) {
+  ._animate-lines-right{
+    animation: _lines-right-0-10 1.5s ease-in-out forwards;
+  }
+  ._animate-lines-left{
+    animation: _lines-left-0-10 1.5s ease-in-out forwards;
+  }
+}
