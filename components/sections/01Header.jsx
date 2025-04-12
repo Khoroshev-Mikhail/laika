@@ -13,11 +13,12 @@ import laika_mini from '../../public/img/components/01Header/laika_mini.png'
 export default function Header(){
     const [ isHidden, setIsHidden ] = useState(true)
     return (
-        <section id="01Header" className="_section relative pb-[8%] ">
-
-            <div className="absolute top-0 w-full h-full bg-[url('/img/components/01Header/bg.webp')] bg-no-repeat bg-cover -z-50"></div>
+        <section id="01Header" className="_section relative md:aspect-video">
+            <div className="absolute top-0 -left-50 w-full h-full bg-[url('/img/components/01Header/bg_frame.png')] bg-no-repeat bg-contain bg-center -z-40"></div>
+            <div className="absolute top-0 w-full h-full bg-[url('/img/components/01Header/bg.png')] bg-no-repeat bg-cover -z-50"></div>
             
-            <div className="_wrapper flex flex-col">
+            
+            <div className="_wrapper flex flex-col md:aspect-video">
 
                 {/* Меню */}
                 <div className="flex justify-between mt-4 md:mt-8 xl:mt-10">
@@ -60,7 +61,7 @@ export default function Header(){
 
 
                 {/* Основа */}
-                <div className="flex flex-col md:flex-row overflow-hidden">
+                <div className="flex flex-col md:aspect-video md:flex-row overflow-hidden">
                     
                     <div className="w-1/2">
                         <div className="hidden md:flex">
@@ -80,7 +81,7 @@ export default function Header(){
                         </div>
                     </div>
 
-                    <div className="w-1/2">
+                    <div className="w-1/2 max-h-1/2">
                         <Image className="hidden md:block" src={laika_big} alt="LAIKA MEME"/>
                         <Image className="md:hidden" src={laika_mini} alt="LAIKA MEME"/>
                     </div>

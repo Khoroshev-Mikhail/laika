@@ -10,8 +10,7 @@ import { DRUK_WIDE } from '@/pages/_app'
 export default function About(){
     return (
         <section id="02About" className="_section relative">
-
-            <div className="_animate-mission hidden md:block w-full scale-x-[-1]  h-[120%] absolute -bottom-1/2 -z-40 bg-contain bg-no-repeat bg-[url('/img/components/eclipse.webp')]"></div>
+            {/* <div className="_animate-mission hidden md:block w-full scale-x-[-1]  h-[120%] absolute -bottom-1/2 -z-40 bg-contain bg-no-repeat bg-[url('/img/components/eclipse.webp')]"></div>
 
             <div className="_wrapper flex flex-col justify-between overflow-hidden font-extrabold text-black pb-2">
                 <h2 className={`${DRUK_WIDE} _h2 text-center mt-14`}>About girafix</h2>
@@ -36,7 +35,12 @@ export default function About(){
                     <Image  data-aos-delay="300" data-aos-duration="1500" data-aos="fade-right" className='absolute -left-[35%] md:left-0 bottom-[4%] md:bottom-[5%] w-2/3 md:w-1/4' src={lines_left}/>
                     <Image  data-aos-delay="300" data-aos-duration="1500" data-aos="fade-left" className='absolute w-2/3 right-[-40%] md:right-0 bottom-[0%] md:w-1/4  md:top-[5%] ' src={lines_right}/>
                 </div>
-            </div>
+            </div> */}
+
+            <div>
+                
+            </div>        
+
         </section>
     )
 }
