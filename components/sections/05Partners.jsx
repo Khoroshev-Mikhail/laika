@@ -1,27 +1,29 @@
 import Image from 'next/image'
-import partner_1 from '../../public/img/components/04Partners/1.webp'
-import partner_2 from '../../public/img/components/04Partners/2.webp'
-import partner_3 from '../../public/img/components/04Partners/3.webp'
-import partner_4 from '../../public/img/components/04Partners/4.webp'
-import partner_5 from '../../public/img/components/04Partners/5.webp'
-import partner_6 from '../../public/img/components/04Partners/6.webp'
-import partner_7 from '../../public/img/components/04Partners/7.webp'
+import partner_1 from '../../public/img/components/05Partners/1.webp'
+import partner_2 from '../../public/img/components/05Partners/2.webp'
+import partner_3 from '../../public/img/components/05Partners/3.webp'
+import partner_4 from '../../public/img/components/05Partners/4.webp'
+import partner_5 from '../../public/img/components/05Partners/5.webp'
+import partner_6 from '../../public/img/components/05Partners/6.webp'
+import partner_7 from '../../public/img/components/05Partners/7.webp'
 import { RAYDIS } from "@/pages/_app";
-import Ticker from '../elements/Ticker'
 
 export default function Partners(){
     return (
-        <section id="04Partners" className="_section relative overflow-visible py-[180px]">
+        <section id="Partners" className="_section relative overflow-hidden py-[10%]">
 
 
-            <div className="absolute top-0 left-0 w-full h-full bg-contain bg-no-repeat bg-[url('/img/components/04Partners/grid_top.png')] bg-top z-10"></div>
-            <div className="absolute bottom-0 left-0 w-full h-full bg-contain bg-no-repeat bg-[url('/img/components/04Partners/grid_bottom.png')] bg-bottom z-10"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-contain bg-no-repeat bg-[url('/img/components/05Partners/bg.png')] bg-left-top z-10"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-contain bg-no-repeat bg-[url('/img/components/05Partners/bg_2.png')] bg-left-top z-10"></div>
+            
+            <div className="absolute top-0 left-0 w-full h-full bg-contain bg-no-repeat bg-[url('/img/components/05Partners/grid_top.png')] bg-top z-10"></div>
+            <div className="absolute bottom-0 left-0 w-full h-full bg-contain bg-no-repeat bg-[url('/img/components/05Partners/grid_bottom.png')] bg-bottom z-10"></div>
             <div className="_animate-moveUp hidden md:block w-full h-[250%] absolute -bottom-[100%] -z-50 bg-contain bg-no-repeat bg-[url('/img/components/eclipse.webp')]"></div>
             <div className="_animate-moveUp md:hidden w-full h-[200%] absolute -bottom-[100%] right-0 -z-50 bg-contain bg-no-repeat bg-right bg-[url('/img/components/eclipse_mobile.webp')]"></div>
 
 
 
-            <div className="_wrapper">
+            <div className="_wrapper relative z-50">
                 <h2 className={`${RAYDIS} _h2 text-center w-full`}>PARTNERS</h2>
 
                 <div className="grid grid-cols-2 grid-rows-4 md:grid-cols-12 md:grid-rows-2 gap-10">

@@ -25,7 +25,7 @@ body {
   @apply bg-gradient-to-b from-[#5B5B5B] via-[#2A2A2A] to-[#5B5B5B] inline-block  text-transparent bg-clip-text _text-shadow-2px
 }
 ._h2 {
-  @apply text-center w-full mx-auto text-[28px] xs:text-[36px] sm:text-[44px] md:text-[52px] lg:text-[60px] _text-shadow bg-gradient-to-r from-_orange to-[#FF932F] inline-block  text-transparent bg-clip-text  uppercase mb-[30px]
+  @apply  text-center w-full mx-auto text-[30px] xs:text-[36px] sm:text-[44px] md:text-[52px] lg:text-[60px] text-white inline-block   uppercase mb-[30px]
 }
 ._24px{
   @apply text-[16px] sm:text-[18px] md:text-[20px] xl:text-[24px] font-medium
@@ -39,7 +39,16 @@ body {
 ._shadow{
   box-shadow: 0 5px 0px 0px rgb(0 0 0 / 1), inset 0 3px 2px 0 rgb(255 255 255 / 0.4);
 }
-
+._stroke{
+  color: white;
+  -webkit-text-stroke: 10px #112C5F;
+  text-stroke: 10px #112C5F;
+  text-shadow:
+    -3px -3px 0 #4C77E6,
+    3px -3px 0 #4C77E6,
+    -3px 3px 0 #4C77E6,
+    3px 3px 0 #4C77E6;
+}
 ._phase1 {
   position: relative;
 }
