@@ -18,7 +18,7 @@ export default function Home() {
             <link rel="shortcut icon" href="/img/favicon.png" />
         </Head>
 
-        {/* <Header/> */}
+        <Header/>
         <About/>
         <Tokenomics/>
         <Roadmap/>

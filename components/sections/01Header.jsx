@@ -13,12 +13,17 @@ import laika_mini from '../../public/img/components/01Header/laika_mini.png'
 export default function Header(){
     const [ isHidden, setIsHidden ] = useState(true)
     return (
-        <section id="01Header" className="_section relative md:aspect-video">
+        <section id="01Header" className="_section relative ">
+
+<div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_left_line_mobile.png')] md:bg-[url('/img/components/04Roadmap/bg_left_line.png')] bg-no-repeat bg-left bg-contain z-50"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_top_line_mobile.png')] md:bg-[url('/img/components/04Roadmap/bg_top_line.png')] bg-no-repeat bg-top bg-contain z-50"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_right_line_mobile.png')] md:bg-[url('/img/components/04Roadmap/bg_right_line.png')] bg-no-repeat bg-right bg-contain z-50"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_bottom_line_mobile.png')] md:bg-[url('/img/components/04Roadmap/bg_bottom_line.png')] bg-no-repeat bg-bottom bg-contain z-50"></div>
             <div className="absolute top-0 -left-50 w-full h-full bg-[url('/img/components/01Header/bg_frame.png')] bg-no-repeat bg-contain bg-center -z-40"></div>
             <div className="absolute top-0 w-full h-full bg-[url('/img/components/01Header/bg.png')] bg-no-repeat bg-cover -z-50"></div>
             
             
-            <div className="_wrapper flex flex-col md:aspect-video">
+            <div className="_wrapper flex flex-col">
 
                 {/* Меню */}
                 <div className="flex justify-between mt-4 md:mt-8 xl:mt-10">
@@ -27,7 +32,7 @@ export default function Header(){
                                 <Social />
                             </div>
                         </div>
-                        <div className="flex flex-col justify-center pb-1 relative z-40 cursor-pointer" onClick={()=> setIsHidden(false) }>
+                        <div className="flex flex-col justify-center pb-1 relative z-50 cursor-pointer" onClick={()=> setIsHidden(false) }>
                             <Image src={burger} alt="Menu" className="w-[39px] md:w-auto"/>
                         </div>
                 </div>
@@ -61,7 +66,7 @@ export default function Header(){
 
 
                 {/* Основа */}
-                <div className="flex flex-col md:aspect-video md:flex-row overflow-hidden">
+                <div className="flex flex-col md:flex-row overflow-hidden">
                     
                     <div className="w-1/2">
                         <div className="hidden md:flex">

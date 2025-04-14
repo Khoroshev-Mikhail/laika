@@ -17,7 +17,7 @@ export default function Roadmap(){
             <div className="_wrapper">
                 <h2 className={`${RAYDIS} _h2 !text-left`}>ROADMAP</h2>
 
-                <div className="[&>div>div>div>ul]:list-image-[url(/img/components/04Roadmap/list.svg)] grid grid-rows-4 md:grid-rows-12 grid-cols-2 ">
+                <div className="[&>div>div>div>ul]:list-image-[url(/img/components/04Roadmap/list.svg)] grid grid-rows-4 md:grid-rows-12 grid-cols-2 [&>div>div>div>ul>li]:pl-2 ">
                     <div className="col-span-2 md:col-span-1 row-span-1 md:row-span-5">
                         <div className="relative flex flex-col gap-y-2 md:gap-y-0 justify-center md:flex-row h-48 _phase1 ml-8 pr-8 md:pr-0 md:ml-0 ">
                             <svg  className="absolute -top-[13px] left-[20%] w-7 h-7 scale-x-[-1] " xmlns="http://www.w3.org/2000/svg" shapeRendering="geometricPrecision" fill="#0874AC" textRendering="geometricPrecision" imageRendering="optimizeQuality" fillRule="evenodd" clipRule="evenodd" viewBox="0 0 312 511.42"><path fillRule="nonzero" d="M306.3 32.62 65.46 252.86 312 478.8l-29.84 32.62L0 252.83 276.46 0z"/></svg>
