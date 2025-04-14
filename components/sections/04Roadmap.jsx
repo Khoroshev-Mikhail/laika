@@ -21,11 +21,11 @@ export default function Roadmap(){
                     <div className="col-span-2 md:col-span-1 row-span-1 md:row-span-5">
                         <div className="relative flex flex-col gap-y-2 md:gap-y-0 justify-center md:flex-row h-48 _phase1 ml-8 pr-8 md:pr-0 md:ml-0 ">
                             <svg  className="absolute -top-[13px] left-[20%] w-7 h-7 scale-x-[-1] " xmlns="http://www.w3.org/2000/svg" shapeRendering="geometricPrecision" fill="#0874AC" textRendering="geometricPrecision" imageRendering="optimizeQuality" fillRule="evenodd" clipRule="evenodd" viewBox="0 0 312 511.42"><path fillRule="nonzero" d="M306.3 32.62 65.46 252.86 312 478.8l-29.84 32.62L0 252.83 276.46 0z"/></svg>
-                            <div data-aos-delay="100" data-aos="zoom-in" data-aos-duration="1500"  className={`${RAYDIS} block w-full md:w-1/3 sm:text-center md:text-left text-[18px] sm:text-[20px] lg:text-[24px] xl:text-[30px] text-white md:pt-10 `}>
+                            <div data-aos-delay="100" data-aos="zoom-in" data-aos-duration="1500"  className={`${RAYDIS} block w-full md:w-1/3 sm:text-center md:text-left text-[18px] sm:text-[20px] lg:text-[24px] xl:text-[30px] text-white md:pt-8 `}>
                                 PHASE <span className="text-_purple">1</span>
                             </div>
-                            <div data-aos-delay="100" data-aos="zoom-in" data-aos-duration="1500"  className="block sm:mx-auto md:w-2/3 md:ml-8 lg:ml-10 xl:ml-12 md:mt-8">
-                                <ul className="pl-4 md:pl-0 leading-tight md:leading-normal list-disc marker:text-_purple font-normal text-[16px] xs:text-[14px] sm:text-[16px] xl:text-[20px]">
+                            <div data-aos-delay="100" data-aos="zoom-in" data-aos-duration="1500"  className="block sm:mx-auto md:w-2/3 md:ml-8 lg:ml-10 xl:ml-4 md:mt-8">
+                                <ul className="pl-4 md:pl-0 leading-tight md:leading-normal list-disc marker:text-_purple font-normal text-[16px] xs:text-[18px] sm:text-[20px] md:text-[18px] lg:text-[20px] xl:text-[24px]">
                                     <li>Create website</li>
                                     <li>Presale and Launch Marketing</li>
                                     <li>Crypto influencers AMA</li>
@@ -40,8 +40,8 @@ export default function Roadmap(){
                             <div data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1500"  className={`${RAYDIS} block w-full sm:text-center md:text-left md:w-5/12 lg:w-5/12 text-[18px] sm:text-[20px] lg:text-[24px] xl:text-[30px] text-white md:ml-8 lg:ml-10 xl:ml-12`}>
                                 PHASE <span className="text-_purple">2</span>
                             </div>
-                            <div data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1500"  className="block sm:mx-auto md:w-7/12 lg:w-7/12 md:ml-8 lg:ml-10 xl:ml-12">
-                                <ul className="pl-4 md:pl-0 leading-tight md:leading-normal list-disc marker:text-_purple font-normal text-[16px] xs:text-[14px] sm:text-[16px] xl:text-[20px]">
+                            <div data-aos-delay="200" data-aos="zoom-in" data-aos-duration="1500"  className="block sm:mx-auto md:w-7/12 lg:w-7/12 md:ml-8 lg:ml-10 xl:ml-4">
+                                <ul className="pl-4 md:pl-0 leading-tight md:leading-normal list-disc marker:text-_purple font-normal text-[16px] xs:text-[18px] sm:text-[20px] md:text-[18px] lg:text-[20px] xl:text-[24px]">
                                     <li>Listed on Coinmarketcap </li>
                                     <li>Listed on Coingecko </li>
                                     <li>Partnership with Marketing Agencies</li>
@@ -59,8 +59,8 @@ export default function Roadmap(){
                             <div data-aos-delay="300" data-aos="zoom-in" data-aos-duration="1500"  className={`${RAYDIS} block w-full  sm:text-center md:text-left md:w-5/12 lg:w-5/12 md:ml-8 lg:ml-10 xl:ml-12  text-[18px] sm:text-[20px] lg:text-[24px] xl:text-[30px] text-white`}>
                                 PHASE <span className="text-_purple">3</span>
                             </div>
-                            <div data-aos-delay="300" data-aos="zoom-in" data-aos-duration="1500"  className="block sm:mx-auto md:w-7/12 lg:w-7/12 md:ml-8 lg:ml-10 xl:ml-12 md:pr-2">
-                                <ul className="pl-4 md:pl-0 leading-tight md:leading-normal list-disc marker:text-_purple font-normal text-[16px] xs:text-[14px] sm:text-[16px] xl:text-[20px]">
+                            <div data-aos-delay="300" data-aos="zoom-in" data-aos-duration="1500"  className="block sm:mx-auto md:w-7/12 lg:w-7/12 md:ml-8 lg:ml-10 xl:ml-4 md:pr-2">
+                                <ul className="pl-4 md:pl-0 leading-tight md:leading-normal list-disc marker:text-_purple font-normal text-[16px] xs:text-[18px] sm:text-[20px] md:text-[18px] lg:text-[20px] xl:text-[24px]">
                                     <li>Global marketing </li>
                                     <li>Community 15000 holders </li>
                                     <li>New Partnerships</li>
@@ -75,8 +75,8 @@ export default function Roadmap(){
                             <div data-aos-delay="500" data-aos="zoom-in" data-aos-duration="1500"  className={`${RAYDIS} block w-full sm:text-center md:text-left md:w-5/12 lg:w-5/12  text-[18px] sm:text-[20px] lg:text-[24px] xl:text-[30px] text-white md:pt-12`}>
                                 PHASE <span className="text-_purple">4</span>
                             </div>
-                            <div data-aos-delay="500" data-aos="zoom-in" data-aos-duration="1500"  className="block sm:mx-auto md:w-2/3 md:ml-8 lg:ml-10 xl:ml-12 md:mt-12 pr-8">
-                                <ul className="pl-4 md:pl-0 leading-tight md:leading-normal list-disc marker:text-_purple font-normal text-[16px] xs:text-[14px] sm:text-[16px] xl:text-[20px] ">
+                            <div data-aos-delay="500" data-aos="zoom-in" data-aos-duration="1500"  className="block sm:mx-auto md:w-2/3 md:ml-8 lg:ml-10 xl:ml-4 md:mt-12 pr-8">
+                                <ul className="pl-4 md:pl-0 leading-tight md:leading-normal list-disc marker:text-_purple font-normal text-[16px] xs:text-[18px] sm:text-[20px] md:text-[18px] lg:text-[20px] xl:text-[24px] ">
                                     <li>Community 100000 holders </li>
                                     <li>New Exchange Listing CEX </li>
                                     <li>Focus on global development </li>
