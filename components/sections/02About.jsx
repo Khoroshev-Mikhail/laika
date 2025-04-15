@@ -16,22 +16,22 @@ export default function About(){
                 <h2 className={`${RAYDIS} _h2`} >
                     Laika is talking to you:
                 </h2>
-                <div className="grid grid-rows-3 grid-cols-1 w-1/2 max-w-xl lg:w-1/3 ma mx-auto gap-y-[5px] md:gap-y-[10px]">
-                    <div className="col-span-1 row-span-1 flex flex-row justify-start p-[12px] md:p-[12px] gap-x-3 bg-[url('/img/components/02About/bg_line.png')] bg-no-repeat bg-left bg-contain">
+                <div className="grid grid-rows-3 grid-cols-1 p-4 w-full md:w-2/3 max-w-xl lg:w-1/2 mx-auto gap-y-[5px] md:gap-y-[10px]">
+                    <div className="col-span-1 row-span-1 flex flex-row justify-start p-[12px] md:p-[12px] gap-x-3 xs:bg-[url('/img/components/02About/bg_line.png')] bg-[url('/img/components/02About/bg_line_mobile.png')] aspect-[280/60] xs:aspect-[552/79] bg-no-repeat bg-left bg-contain">
                         <Image className="block" src={icon_1} alt="" />
                         <div className="flex flex-col">
                             <div className="text-white text-[20px] md:text-[22px] lg:text-[24px]">Live Laika</div>
                             <div className="text-_blue text-[14px] md:text-[16px]">Experience the Laika</div>
                         </div>
                     </div>
-                    <div className="col-span-1 row-span-1 flex flex-row justify-start p-[12px] md:p-[12px] gap-x-3 bg-[url('/img/components/02About/bg_line.png')] bg-no-repeat bg-left bg-contain">
+                    <div className="col-span-1 row-span-1 flex flex-row justify-start p-[12px] md:p-[12px] gap-x-3 xs:bg-[url('/img/components/02About/bg_line.png')] bg-[url('/img/components/02About/bg_line_mobile.png')] aspect-[280/60] xs:aspect-[552/79] bg-no-repeat bg-left bg-contain">
                         <Image className="block" src={icon_2} alt="" />
                         <div className="flex flex-col">
                             <div className="text-white text-[20px] md:text-[22px] lg:text-[24px]">Whitepaper</div>
                             <div className="text-_blue text-[14px] md:text-[16px]">View the whitepaper</div>
                         </div>
                     </div>
-                    <div className="col-span-1 row-span-1 flex flex-row justify-start p-[12px] md:p-[12px] gap-x-3 bg-[url('/img/components/02About/bg_line.png')] bg-no-repeat bg-left bg-contain">
+                    <div className="col-span-1 row-span-1 flex flex-row justify-start p-[12px] md:p-[12px] gap-x-3 xs:bg-[url('/img/components/02About/bg_line.png')] bg-[url('/img/components/02About/bg_line_mobile.png')] aspect-[280/60] xs:aspect-[552/79] bg-no-repeat bg-left bg-contain">
                         <Image className="block" src={icon_3} alt="" />
                         <div className="flex flex-col">
                             <div className="text-white text-[20px] md:text-[22px] lg:text-[24px]">Github</div>

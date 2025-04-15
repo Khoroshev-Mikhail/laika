@@ -9,6 +9,7 @@ import arrow from '../../public/img/components/01Header/arrow.svg'
 import cross from '../../public/img/components/01Header/cross.svg'
 import laika_big from '../../public/img/components/01Header/laika_big.png'
 import laika_mini from '../../public/img/components/01Header/laika_mini.png'
+import Buttons from "../elements/Buttons";
 
 export default function Header(){
     const [ isHidden, setIsHidden ] = useState(true)
@@ -80,9 +81,8 @@ export default function Header(){
                             Laika, once the first dog in space, is back — not just on Earth, but on the blockchain. Reborn as a meme-based space icon on Solana, she now roams the digital galaxy, leading the charge to combine decentralization with AI. 
                         </div>
 
-                        <div className="flex gap-x-4">
-                            <a className="" href="">WhITEPAPER</a>
-                            <a className="" href="">PRESALE</a>
+                        <div className="">
+                            <Buttons />
                         </div>
                     </div>
 

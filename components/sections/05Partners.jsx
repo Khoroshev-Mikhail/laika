@@ -13,11 +13,28 @@ export default function Partners(){
         <section id="Partners" className="_section relative overflow-hidden py-[10%]">
 
 
-            <div className="absolute top-0 left-0 w-full h-full bg-contain bg-no-repeat md:bg-[url('/img/components/05Partners/bg.png')] bg-[url('/img/components/05Partners/bg_mobile.png')] bg-left-top z-10"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-cover md:bg-contain bg-no-repeat md:bg-[url('/img/components/05Partners/bg.png')] bg-[url('/img/components/05Partners/bg_mobile.png')] bg-center md:bg-left-top z-10"></div>
             <div className="absolute top-0 left-0 w-full h-full bg-contain bg-no-repeat bg-[url('/img/components/05Partners/bg_2.png')] bg-left-top z-10"></div>
             
-            <div className="absolute top-0 left-0 w-full h-full bg-contain bg-no-repeat md:bg-[url('/img/components/05Partners/grid_top.png')] bg-[url('/img/components/05Partners/grid_top_mobile.png')] bg-top z-10"></div>
-            <div className="absolute bottom-0 left-0 w-full h-full bg-contain bg-no-repeat md:bg-[url('/img/components/05Partners/grid_bottom.png')] bg-[url('/img/components/05Partners/grid_bottom_mobile.png')] bg-bottom z-10"></div>
+            <div  style={{
+    WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)',
+    WebkitMaskRepeat: 'no-repeat',
+    WebkitMaskSize: '100% 100%',
+    maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0) 100%)',
+    maskRepeat: 'no-repeat',
+    maskSize: '100% 100%',
+  }}
+  className="absolute top-0 left-0 w-full h-full bg-contain bg-no-repeat md:bg-[url('/img/components/05Partners/grid_top.png')] bg-[url('/img/components/05Partners/grid_top_mobile.png')] z-10"></div>
+            <div 
+             style={{
+                WebkitMaskImage: 'linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)',
+                WebkitMaskRepeat: 'no-repeat',
+                WebkitMaskSize: '100% 100%',
+                maskImage: 'linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0) 100%)',
+                maskRepeat: 'no-repeat',
+                maskSize: '100% 100%',
+              }}
+            className="absolute bottom-0 left-0 w-full h-full bg-contain bg-no-repeat md:bg-[url('/img/components/05Partners/grid_bottom.png')] bg-[url('/img/components/05Partners/grid_bottom_mobile.png')] bg-bottom z-10"></div>
 
             <div className="_animate-moveUp hidden md:block w-full h-[250%] absolute -bottom-[100%] -z-50 bg-contain bg-no-repeat bg-[url('/img/components/eclipse.webp')]"></div>
             <div className="_animate-moveUp md:hidden w-full h-[200%] absolute -bottom-[100%] right-0 z-50 bg-contain bg-no-repeat bg-right bg-[url('/img/components/eclipse_mobile.png')]"></div>

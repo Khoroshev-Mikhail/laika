@@ -24,8 +24,15 @@ body {
 ._text-shadow-footer{
   @apply bg-gradient-to-b from-[#5B5B5B] via-[#2A2A2A] to-[#5B5B5B] inline-block  text-transparent bg-clip-text _text-shadow-2px
 }
+
+._30_90{
+  @apply text-[30px] xs:text-[36px] sm:text-[46px] md:text-[60px] lg:text-[70px] xl:text-[90px]
+}
+._30_80{
+  @apply text-[30px] xs:text-[36px] sm:text-[42px] md:text-[56x] lg:text-[60px] xl:text-[80px]
+}
 ._h2 {
-  @apply  text-center w-full mx-auto text-[30px] xs:text-[36px] sm:text-[44px] md:text-[52px] lg:text-[60px] text-white inline-block   uppercase mb-[30px]
+  @apply  text-center w-full mx-auto  text-white inline-block  uppercase mb-[30px] _30_80
 }
 ._24px{
   @apply text-[16px] sm:text-[18px] md:text-[20px] xl:text-[24px] font-medium
@@ -181,6 +188,18 @@ body {
 ._animate-roadmap {
   animation: _animateRoadmap 10s ease-in-out infinite;
 }
+@keyframes _animateRoadmapDown{
+  0%, 100% {
+    bottom: -25%;
+  }
+
+  50% {
+    bottom: 50%;
+  }
+}
+._animate-roadmapDown {
+  animation: _animateRoadmapDown 10s ease-in-out infinite;
+}
 @keyframes _moveUp{
   0%, 100% {
     top: 0;
@@ -193,6 +212,20 @@ body {
 
 ._animate-moveUp {
   animation: _moveUp 6s ease-in-out infinite;
+}
+
+@keyframes _moveDown{
+  0%, 100% {
+    bottom: 0;
+  }
+  
+  50% {
+    bottom: -25%;
+  }
+}
+
+._animate-moveDown {
+  animation: _moveDown 6s ease-in-out infinite;
 }
 
 
