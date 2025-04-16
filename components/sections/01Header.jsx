@@ -5,10 +5,9 @@ import Social from "../elements/Social";
 
 import burger from '../../public/img/components/01Header/burger.svg'
 import arrow from '../../public/img/components/01Header/arrow.svg'
-// import giraffix_menu from '../../public/img/components/01Header/giraffix_menu.webp'
 import cross from '../../public/img/components/01Header/cross.svg'
 import laika_big from '../../public/img/components/01Header/laika_big.png'
-import laika_mini from '../../public/img/components/01Header/laika_mini.png'
+import laika_mini from '../../public/img/components/01Header/laika_mobile.png'
 import Buttons from "../elements/Buttons";
 
 export default function Header(){
@@ -21,7 +20,8 @@ export default function Header(){
             <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_right_line_mobile.png')] md:bg-[url('/img/components/04Roadmap/bg_right_line.png')] bg-no-repeat bg-right bg-contain z-50"></div>
             <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_bottom_line_mobile.png')] md:bg-[url('/img/components/04Roadmap/bg_bottom_line.png')] bg-no-repeat bg-bottom bg-contain z-50"></div>
             <div className="absolute top-0 -left-50 w-full h-full bg-[url('/img/components/01Header/bg_frame.png')] bg-no-repeat bg-contain bg-center -z-40"></div>
-            <div className="absolute top-0 w-full h-full bg-[url('/img/components/01Header/bg.png')] bg-no-repeat bg-cover -z-50"></div>
+            <div className="absolute w-full h-full -bottom-[70%] bg-[url('/img/components/01Header/earth.png')] bg-no-repeat bg-contain z-0"></div>
+            <div className="md:hidden absolute w-full h-full -bottom-[15%] bg-[url('/img/components/01Header/blur.png')] bg-no-repeat bg-contain bg-bottom z-0"></div>
             
             
             <div className="_wrapper flex flex-col">
@@ -69,26 +69,28 @@ export default function Header(){
                 {/* Основа */}
                 <div className="flex flex-col md:flex-row overflow-hidden">
                     
-                    <div className="w-1/2">
+                    <div className="md:w-1/2">
                         <div className="hidden md:flex">
                             <Social />
                         </div>
                         
-                        <h1>LAIKA MEME</h1>
+                        <h1 className={`${RAYDIS} pt-[50px] font-bold  text-[60px] xs:text-[70px] sm:text-[80px] md:text-[90px] lg:text-[100px] xl:text-[110px] leading-[30px]`}>
+                            LAIKA <span className="_30_90 leading-[40px]">MEME</span>
+                        </h1>
 
-                        <div>
+                        <div className="pt-[10px] leading-none">
                             <Image className="inline mr-2" src={arrow} alt="->" />
-                            Laika, once the first dog in space, is back — not just on Earth, but on the blockchain. Reborn as a meme-based space icon on Solana, she now roams the digital galaxy, leading the charge to combine decentralization with AI. 
+                            Laika, once the first dog in space, is back — not just on Earth, <span className="text-_purple">but on the blockchain.</span> Reborn as a meme-based space icon on Solana, she now roams the digital galaxy, leading the charge to combine decentralization with AI. 
                         </div>
 
-                        <div className="">
+                        <div className="pt-[10px]">
                             <Buttons />
                         </div>
                     </div>
 
-                    <div className="w-1/2 max-h-1/2">
+                    <div className="w-1/2 max-h-1/2 flex flex-row justify-between mx-auto">
                         <Image className="hidden md:block" src={laika_big} alt="LAIKA MEME"/>
-                        <Image className="md:hidden" src={laika_mini} alt="LAIKA MEME"/>
+                        <Image className="md:hidden block mx-auto relative z-40" src={laika_mini} alt="LAIKA MEME"/>
                     </div>
                     
                 </div>
