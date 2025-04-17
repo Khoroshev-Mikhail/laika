@@ -32,6 +32,7 @@ module.exports = {
         '_gray': '#252525',
         '_blue': '#3466E0',
         '_purple': '#41B7CF',
+        '_white': '##FFF5E6',
       },
     },
   },

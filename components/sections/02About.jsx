@@ -12,6 +12,18 @@ export default function About(){
         <div className="absolute z-10 top-0 left-[5%] bg-left-bottom bg-no-repeat bg-contain h-[40%] w-full bg-[url('/img/components/02About/jupiter.png')]"></div>
         <div className="scale-x-[-1] absolute z-10 top-1/3 -left-[5%] bg-left-top bg-no-repeat bg-contain h-[40%] w-full bg-[url('/img/components/02About/jupiter.png')]"></div>
 
+        <div
+        style={{
+            WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%)',
+            WebkitMaskRepeat: 'no-repeat',
+            WebkitMaskSize: '100% 100%',
+            maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.1) 80%, rgba(0,0,0,0) 100%)',
+            maskRepeat: 'no-repeat',
+            maskSize: '100% 100%',
+          }}
+        className="absolute z-10 top-0 bg-contain w-full h-full bg-[url('/img/components/02About/grid.png')] bg-no-repeat"></div>
+
+
             <div className="flex flex-col mx-auto relative z-40">
                 <h2 className={`${RAYDIS} _h2`} >
                     Laika is talking to you:
