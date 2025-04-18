@@ -14,7 +14,7 @@ export default function Partners(){
 
 
             <div className="absolute top-0 left-0 w-full h-full bg-cover md:bg-cover bg-no-repeat md:bg-[url('/img/components/05Partners/bg.png')] bg-[url('/img/components/05Partners/bg_mobile.png')] bg-center md:bg-left-top z-10"></div>
-            <div className="absolute top-0 left-0 w-full h-full bg-contain bg-no-repeat bg-[url('/img/components/05Partners/bg_2.png')] bg-left-top z-10"></div>
+            {/* <div className="absolute top-0 left-0 w-full h-full bg-contain bg-no-repeat bg-[url('/img/components/05Partners/bg_2.png')] bg-left-top z-10"></div> */}
             
             <div  style={{
     WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)',
@@ -42,7 +42,10 @@ export default function Partners(){
 
 
             <div className="_wrapper relative z-50">
-                <h2 className={`${RAYDIS} _h2 text-center w-full`}>PARTNERS</h2>
+                <h2 className={`${RAYDIS} _h2 text-center w-full relative _stroke2`}>
+                    PARTNERS
+                    <span className="absolute block w-full h-full top-0 left-0 _stroke">PARTNERS</span>
+                </h2>
 
                 <div className="grid grid-cols-2 grid-rows-4 md:grid-cols-12 md:grid-rows-2 gap-10">
                     <div className="col-span-1 md:col-span-4 flex justify-center mx-auto">

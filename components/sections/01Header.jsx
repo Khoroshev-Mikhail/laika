@@ -1,29 +1,41 @@
-import {  DRUK_WIDE, RAYDIS } from "@/pages/_app";
+import { RAYDIS } from "@/pages/_app";
 import Image from "next/image";
 import { useState } from "react";
-import Social from "../elements/Social";
+
 
 import burger from '../../public/img/components/01Header/burger.svg'
 import arrow from '../../public/img/components/01Header/arrow.svg'
 import cross from '../../public/img/components/01Header/cross.svg'
-import laika_big from '../../public/img/components/01Header/laika_big.png'
-import laika_mini from '../../public/img/components/01Header/laika_mobile.png'
-import earth from '../../public/img/components/01Header/earth.png'
+import laika_big from '../../public/img/components/01Header/laika_big.webp'
+import laika_mini from '../../public/img/components/01Header/laika_mobile.webp'
+import earth from '../../public/img/components/01Header/earth.webp'
 import Buttons from "../elements/Buttons";
+import Social from "../elements/Social";
 
 export default function Header(){
     const [ isHidden, setIsHidden ] = useState(true)
     return (
         <section id="01Header" className="_section relative overflow-hidden">
-            <div className="absolute w-full h-full top-0 bg-[url('/img/components/01Header/bg_stars.png')] bg-no-repeat bg-center bg-cover z-10"></div>
-            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_left_line_mobile.png')] md:bg-[url('/img/components/04Roadmap/bg_left_line.png')] bg-no-repeat bg-left bg-contain z-50"></div>
-            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_top_line_mobile.png')] md:bg-[url('/img/components/04Roadmap/bg_top_line.png')] bg-no-repeat bg-top bg-contain z-50"></div>
-            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_right_line_mobile.png')] md:bg-[url('/img/components/04Roadmap/bg_right_line.png')] bg-no-repeat bg-right bg-contain z-50"></div>
-            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_bottom_line_mobile.png')] md:bg-[url('/img/components/04Roadmap/bg_bottom_line.png')] bg-no-repeat bg-bottom bg-contain z-50"></div>
-            <div className="absolute w-full md:w-[120%] md:h-[120%] h-full -bottom-[70%] md:-bottom-[10%] md:-right-[15%] md:bg-right-bottom bg-[url('/img/components/01Header/earth.png')] bg-no-repeat bg-contain z-20"></div>
-            
-            <div className="md:hidden absolute w-full h-full -bottom-[15%] bg-[url('/img/components/01Header/blur.png')] bg-no-repeat bg-contain bg-bottom z-0"></div>
-            
+            <div className="absolute w-full h-full top-0 bg-[url('/img/components/01Header/bg_stars.webp')] bg-no-repeat bg-center bg-cover z-10"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_left_line_mobile.webp')] md:bg-[url('/img/components/01Header/bg_left_line.webp')] bg-no-repeat bg-left bg-contain z-50"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_top_line_mobile.webp')] md:bg-[url('/img/components/01Header/bg_top_line.webp')] bg-no-repeat bg-top bg-contain z-50"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_right_line_mobile.webp')] md:bg-[url('/img/components/01Header/bg_right_line.webp')] bg-no-repeat bg-right bg-contain z-50"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_bottom_line_mobile.webp')] md:bg-[url('/img/components/01Header/bg_bottom_line.webp')] bg-no-repeat bg-bottom bg-contain z-50"></div>
+            <div className="absolute w-full md:w-[120%] md:h-[120%] h-full -bottom-[70%] md:-bottom-[10%] md:-right-[15%] md:bg-right-bottom bg-[url('/img/components/01Header/earth.webp')] bg-no-repeat bg-contain z-20 opacity-70"></div>
+            <div className="absolute w-[120%] h-[120%] opacity-70 -bottom-[20%] -right-[10%]  md:-right-[25%] bg-[url('/img/components/01Header/blur2.png')] bg-no-repeat bg-contain bg-bottom z-40"></div>
+            <div className="hidden md:block absolute w-[24px] h-[24px] top-6 left-7 bg-[url('/img/components/01Header/bg_arrow.svg')] bg-no-repeat bg-cover  z-50"></div>
+            <div className="hidden md:block scale-[-1] absolute w-[24px] h-[24px] bottom-10 right-7 bg-[url('/img/components/01Header/bg_arrow.svg')] bg-no-repeat bg-cover  z-50"></div>
+            <div
+            style={{
+                WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%)',
+                WebkitMaskRepeat: 'no-repeat',
+                WebkitMaskSize: '100% 100%',
+                maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.1) 80%, rgba(0,0,0,0) 100%)',
+                maskRepeat: 'no-repeat',
+                maskSize: '100% 100%',
+            }}
+            className="scale-y-[-1] absolute z-10 top-0 bg-contain w-full h-full bg-[url('/img/components/02About/grid.webp')] bg-no-repeat">
+        </div>
             
             <div className="_wrapper flex flex-col">
 
@@ -60,7 +72,7 @@ export default function Header(){
                         </menu>
                         <div className="w-full md:w-1/2 flex flex-col justify-center relative">
                             <Image src={laika_mini} alt="" className="block w-1/2 mx-auto md:w-full" />
-                            <Image src={earth} alt="" className="block absolute w-full -bottom-[10%] -right-1/4 md:scale-[2] md:bottom-0 -z-20" />
+                            <Image src={earth} alt="" className="block absolute opacity-50 w-full -bottom-[10%] -right-1/4 md:scale-[2] md:bottom-0 -z-20" />
                         </div>
                         
                     </div>
@@ -70,19 +82,22 @@ export default function Header(){
 
                 {/* Основа */}
                 
-                <div className="flex flex-col md:flex-row overflow-hidden relative z-40 ">
+                <div className="flex flex-col md:flex-row overflow-hidden relative z-40 md:px-2">
                     
                     
-                        <div className="md:w-1/2 flex flex-col justify-center -mt-[10%]">
+                        <div className="md:w-1/2 flex flex-col justify-center -mt-[10%] md:-mt-[0%]">
                             <div className="hidden md:flex">
                                 <Social />
                             </div>
                             
-                            <h1 className={`${RAYDIS} pt-[50px] font-bold  text-[60px] xs:text-[70px] sm:text-[80px] md:text-[90px] lg:text-[100px] xl:text-[110px] leading-[30px] xs:leading-[70px] sm:leading-[40px] md:leading-[45px] lg:leading-[50px] xl:leading-[60px]`}>
+                            <h1 className={`${RAYDIS} relative _stroke2 mt-[76px] sm:mt-[100px] md:mt-[30px] font-bold mx-3 text-[60px] xs:text-[70px] sm:text-[80px] md:text-[90px] lg:text-[100px] xl:text-[110px] leading-[30px] xs:leading-[45px] sm:leading-[50px] md:leading-[60px] lg:leading-[70px] xl:leading-[90px]`}>
                                 LAIKA<br /> <span className="_30_90 leading-[40px] md:leading-none">MEME</span>
+                                <div className="absolute block w-full h-full top-0 left-0 _stroke">
+                                    LAIKA<br /> <span className="_30_90 leading-[40px] md:leading-none">MEME</span>
+                                </div>
                             </h1>
 
-                            <div className="pt-[10px] leading-none md:w-2/3">
+                            <div className="pt-[10px] leading-none md:w-full lg:w-2/3 text-[14px] xs:text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] xl:text-[24px]">
                                 <Image className="inline mr-2" src={arrow} alt="->" />
                                 Laika, once the first dog in space, is back — not just on Earth, <span className="text-_purple">but on the blockchain.</span> Reborn as a meme-based space icon on Solana, she now roams the digital galaxy, leading the charge to combine decentralization with AI. 
                             </div>
