@@ -10,7 +10,7 @@ import { RAYDIS } from "@/pages/_app";
 
 export default function Partners(){
     return (
-        <section id="Partners" className="_section relative overflow-hidden py-[10%]">
+        <section id="04Partners" className="_section relative overflow-hidden py-[10%]">
 
 
             <div className="absolute top-0 left-0 w-full h-full bg-cover md:bg-cover bg-no-repeat md:bg-[url('/img/components/05Partners/bg.png')] bg-[url('/img/components/05Partners/bg_mobile.png')] bg-center md:bg-left-top z-10"></div>
