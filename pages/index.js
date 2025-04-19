@@ -19,7 +19,7 @@ export default function Home() {
             <link rel="shortcut icon" href="/img/favicon.png" />
         </Head>
 
-        <PopUp />
+        {/* <PopUp /> */}
         <Header/>
         <About/>
         <Tokenomics/>

@@ -1,8 +1,13 @@
 import { RAYDIS } from "@/pages/_app";
 import { Typewriter } from "react-simple-typewriter";
 import { useState, useEffect } from "react";
+import cross from '../../public/img/components/00PopUp/cross.svg'
+import send from '../../public/img/components/00PopUp/button.svg'
+import Image from "next/image";
 
-export default function PopUp() {
+export default function PopUp({setIsVisible}) {
+  const [isSended, setIsSended] = useState(false);
+  const [sendMessage, setSendMessage] = useState(false);
   const [messageIndex, setMessageIndex] = useState(0);
   const [finishedMessages, setFinishedMessages] = useState([]);
 
@@ -17,6 +22,7 @@ export default function PopUp() {
   ];
 
   useEffect(() => {
+    setIsSended(false)
     if (messageIndex < messages.length) {
       const currentMessage = messages[messageIndex];
       const totalTime = currentMessage.length * typeSpeed + delaySpeed + 200;
@@ -38,14 +44,22 @@ export default function PopUp() {
     }
   }, [messageIndex]);
 
+  const sendMessageFNS = function(){
+    setTimeout(()=>{
+      setIsVisible(false)
+    }, 1000)
+  }
+
   return (
     <section
       id="00PopUp"
-      className="_section relative overflow-hidden h-screen bg-[url('/img/components/00PopUp/bg_mobile.png')] md:bg-[url('/img/components/00PopUp/bg.png')] bg-cover bg-no-repeat"
+      className="_section fixed top-0 z-50 overflow-hidden h-screen bg-[url('/img/components/00PopUp/bg_mobile.png')] md:bg-[url('/img/components/00PopUp/bg.png')] bg-cover bg-no-repeat bg-[#000]"
     >
       <div className="p-5 flex justify-center items-center w-full h-full">
-        <div className="p-5 w-full h-full max-w-[900px] mx-auto rounded-lg border-[1px] border-[#5471D8] flex flex-col">
-
+        <div className="p-5 w-full h-full max-w-[900px] mx-auto rounded-lg border-[1px] border-[#5471D8] flex flex-col relative">
+            <div className="absolute right-5 top-5 w-4 cursor-pointer z-50" onClick={() => setIsVisible(false)}>
+                <Image src={cross} alt="X" />
+            </div>
           {/* Заголовок */}
           <h3 className={`${RAYDIS} font-bold relative _stroke_popup_2 text-[22px] xs:text-[24px] sm:text-[26px] md:text-[28px] lg:text-[34px] xl:text-[40px] uppercase`}>
             experience the laika
@@ -79,15 +93,22 @@ export default function PopUp() {
           </div>
 
           {/* Инпут внизу */}
-          <div className="mt-auto border-t-2 border-[#101D42] pt-3">
+          <div className="mt-auto border-t-2 border-[#101D42] pt-3 relative">
             <input
               className="w-full bg-[#000514] border-2 border-[#112C5F] rounded-lg px-4 py-3 text-_white placeholder-[#5471D8] outline-none"
               placeholder="Type your message..."
               type="text"
             />
+            <div>
+                <Image className="absolute right-4 top-5 cursor-pointer" src={send} alt="SEND MSSG" onClick={()=>{
+                  sendMessageFNS()
+                  setIsSended(true)
+                }}/>
+            </div>
           </div>
         </div>
       </div>
+ 
     </section>
   );
 }

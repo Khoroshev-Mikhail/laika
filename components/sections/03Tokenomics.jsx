@@ -6,7 +6,7 @@ import Ticker from '../elements/Ticker';
 export default function Tokenomics(){
     return (
         <section id="03Tokenomics" className="_section relative overflow-hidden">
-            <div className="w-full relative z-50">
+            <div className="w-full relative z-40">
                 <Ticker left dark />
             </div>
             
@@ -19,7 +19,7 @@ export default function Tokenomics(){
 
             <div className="absolute z-10 bottom-0 left-0 bg-bottom bg-no-repeat bg-cover w-full h-full bg-[url('/img/components/03Tokenomics/bg_mobile.webp')] md:bg-[url('/img/components/03Tokenomics/bg.webp')]"></div>
             
-            <div className="max-w-[1200px] mx-auto z-50 relative py-[10%] p-4">
+            <div className="max-w-[1200px] mx-auto z-40 relative py-[10%] p-4">
                 <h2 data-aos-delay="100" data-aos="fade-right" data-aos-duration="1500" className={`${RAYDIS} _h2 text-center relative _stroke2`}>
                     TOKENOMICS
                     <span className="absolute block w-full h-full top-0 left-0 _stroke">TOKENOMICS</span>

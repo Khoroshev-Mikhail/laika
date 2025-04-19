@@ -2,12 +2,12 @@ import { RAYDIS } from "@/pages/_app";
 
 export default function Roadmap(){
     return (
-        <section id="05Roadmap" className="_section relative overflow-hidden py-[10%]">
+        <section id="05Roadmap" className="_section relative overflow-hidden py-[10%] bg-[#01133A]">
 
-            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/04Roadmap/bg_left_line_mobile.png')] md:bg-[url('/img/components/04Roadmap/bg_left_line.png')] bg-no-repeat bg-left bg-contain z-50"></div>
-            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/04Roadmap/bg_top_line_mobile.png')] md:bg-[url('/img/components/04Roadmap/bg_top_line.png')] bg-no-repeat bg-top bg-contain z-50"></div>
-            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/04Roadmap/bg_right_line_mobile.png')] md:bg-[url('/img/components/04Roadmap/bg_right_line.png')] bg-no-repeat bg-right bg-contain z-50"></div>
-            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/04Roadmap/bg_bottom_line_mobile.png')] md:bg-[url('/img/components/04Roadmap/bg_bottom_line.png')] bg-no-repeat bg-bottom bg-contain z-50"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/04Roadmap/bg_left_line_mobile.png')] md:bg-[url('/img/components/04Roadmap/bg_left_line.png')] bg-no-repeat bg-left bg-contain z-40"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/04Roadmap/bg_top_line_mobile.png')] md:bg-[url('/img/components/04Roadmap/bg_top_line.png')] bg-no-repeat bg-top bg-contain z-40"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/04Roadmap/bg_right_line_mobile.png')] md:bg-[url('/img/components/04Roadmap/bg_right_line.png')] bg-no-repeat bg-right bg-contain z-40"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/04Roadmap/bg_bottom_line_mobile.png')] md:bg-[url('/img/components/04Roadmap/bg_bottom_line.png')] bg-no-repeat bg-bottom bg-contain z-40"></div>
 
 
             <div className="_animate-moveUp z-20 hidden md:block w-full right-0 h-full absolute -bottom-[100%]  bg-contain bg-no-repeat bg-right-bottom bg-[url('/img/components/eclipse.png')]"></div>

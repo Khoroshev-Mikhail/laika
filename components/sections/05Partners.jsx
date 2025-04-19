@@ -34,12 +34,12 @@ export default function Partners(){
               }}
             className="absolute bottom-0 left-0 w-full h-full bg-contain bg-no-repeat md:bg-[url('/img/components/05Partners/grid_bottom.png')] bg-[url('/img/components/05Partners/grid_bottom_mobile.png')] bg-bottom z-10"></div>
 
-            <div className="_animate-moveUp hidden md:block w-full h-[250%] absolute -bottom-[100%] -z-50 bg-contain bg-no-repeat bg-[url('/img/components/eclipse.webp')]"></div>
-            <div className="_animate-moveUp md:hidden w-full h-[200%] absolute -bottom-[100%] right-0 z-50 bg-contain bg-no-repeat bg-right bg-[url('/img/components/eclipse_mobile.png')]"></div>
+            <div className="_animate-moveUp hidden md:block w-full h-[250%] absolute -bottom-[100%] -z-40 bg-contain bg-no-repeat bg-[url('/img/components/eclipse.webp')]"></div>
+            <div className="_animate-moveUp md:hidden w-full h-[200%] absolute -bottom-[100%] right-0 z-40 bg-contain bg-no-repeat bg-right bg-[url('/img/components/eclipse_mobile.png')]"></div>
 
 
 
-            <div className="_wrapper relative z-50">
+            <div className="_wrapper relative z-40">
                 <h2 data-aos="fade-right" data-aos-duration="1500" className={`${RAYDIS} _h2 text-center w-full relative _stroke2`}>
                     PARTNERS
                     <span className="absolute block w-full h-full top-0 left-0 _stroke">PARTNERS</span>

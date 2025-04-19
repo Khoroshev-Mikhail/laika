@@ -17,14 +17,14 @@ export default function Header(){
     return (
         <section id="01Header" className="_section relative overflow-hidden">
             <div className="absolute w-full h-full top-0 bg-[url('/img/components/01Header/bg_stars.webp')] bg-no-repeat bg-center bg-cover z-10"></div>
-            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_left_line_mobile.webp')] md:bg-[url('/img/components/01Header/bg_left_line.webp')] bg-no-repeat bg-left bg-contain z-50"></div>
-            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_top_line_mobile.webp')] md:bg-[url('/img/components/01Header/bg_top_line.webp')] bg-no-repeat bg-top bg-contain z-50"></div>
-            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_right_line_mobile.webp')] md:bg-[url('/img/components/01Header/bg_right_line.webp')] bg-no-repeat bg-right bg-contain z-50"></div>
-            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_bottom_line_mobile.webp')] md:bg-[url('/img/components/01Header/bg_bottom_line.webp')] bg-no-repeat bg-bottom bg-contain z-50"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_left_line_mobile.webp')] md:bg-[url('/img/components/01Header/bg_left_line.webp')] bg-no-repeat bg-left bg-contain z-40"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_top_line_mobile.webp')] md:bg-[url('/img/components/01Header/bg_top_line.webp')] bg-no-repeat bg-top bg-contain z-40"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_right_line_mobile.webp')] md:bg-[url('/img/components/01Header/bg_right_line.webp')] bg-no-repeat bg-right bg-contain z-40"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_bottom_line_mobile.webp')] md:bg-[url('/img/components/01Header/bg_bottom_line.webp')] bg-no-repeat bg-bottom bg-contain z-40"></div>
             <div className="absolute w-full md:w-[120%] md:h-[120%] h-full -bottom-[70%] md:-bottom-[10%] md:-right-[15%] md:bg-right-bottom bg-[url('/img/components/01Header/earth.webp')] bg-no-repeat bg-contain z-20 opacity-70"></div>
-            <div className="_animate-moveUp absolute w-[120%] h-[120%] opacity-70 -bottom-[20%] -right-[10%]  md:-right-[25%] bg-[url('/img/components/01Header/blur2.png')] bg-no-repeat bg-contain bg-bottom z-40"></div>
-            <div className="hidden md:block absolute w-[24px] h-[24px] top-6 left-7 bg-[url('/img/components/01Header/bg_arrow.svg')] bg-no-repeat bg-cover  z-50"></div>
-            <div className="hidden md:block scale-[-1] absolute w-[24px] h-[24px] bottom-10 right-7 bg-[url('/img/components/01Header/bg_arrow.svg')] bg-no-repeat bg-cover  z-50"></div>
+            <div className="_animate-moveUp absolute w-[120%] h-[120%] opacity-70 -bottom-[20%] -right-[10%]  md:-right-[25%] bg-[url('/img/components/01Header/blur2.png')] bg-no-repeat bg-contain bg-bottom z-30"></div>
+            <div className="hidden md:block absolute w-[24px] h-[24px] top-6 left-7 bg-[url('/img/components/01Header/bg_arrow.svg')] bg-no-repeat bg-cover  z-40"></div>
+            <div className="hidden md:block scale-[-1] absolute w-[24px] h-[24px] bottom-10 right-7 bg-[url('/img/components/01Header/bg_arrow.svg')] bg-no-repeat bg-cover  z-40"></div>
             <div
             style={{
                 WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%)',
@@ -46,7 +46,7 @@ export default function Header(){
                                 <Social />
                             </div>
                         </div>
-                        <div className="flex flex-col justify-center pb-1 relative z-50 cursor-pointer" onClick={()=> setIsHidden(false) }>
+                        <div className="flex flex-col justify-center pb-1 relative z-40 cursor-pointer" onClick={()=> setIsHidden(false) }>
                             <Image src={burger} alt="Menu" className="w-[39px] md:w-auto"/>
                         </div>
                 </div>
@@ -55,12 +55,12 @@ export default function Header(){
 
 
                 {/* Выдвижное меню */}
-                <div className={`${isHidden ? 'hidden' : 'block'} absolute z-50 top-0 left-0 w-full  bg-gradient-to-br from-[#3756C7] to-[#000F67] rounded-b-2xl `}>
+                <div className={`${isHidden ? 'hidden' : 'block'} absolute z-40 top-0 left-0 w-full  bg-gradient-to-br from-[#3756C7] to-[#000F67] rounded-b-2xl `}>
 
                     <div className="relative py-4 sm:py-4 md:py-12 xl:py-20 flex flex-col md:flex-row _wrapper">
                         <Image className="absolute top-5 md:top-10 right-5 cursor-pointer w-[30px] h-[30px] sm:w-[49px] sm:h-[49px]" src={ cross } alt="menu-toggle" onClick={()=> setIsHidden(true) }/>
                         
-                        <menu className={`${RAYDIS} block md:w-1/2 w-full relative z-50 text-[18px] xs:text-[20px] sm:text-[22px] md:text-[24px] lg:text-[28px] xl:text-[40px] mt-10 text-_white`}>
+                        <menu className={`${RAYDIS} block md:w-1/2 w-full relative z-40 text-[18px] xs:text-[20px] sm:text-[22px] md:text-[24px] lg:text-[28px] xl:text-[40px] mt-10 text-_white`}>
                             <li className="flex justify-center md:justify-start w-full" onClick={()=> setIsHidden(true) }><a href="#01Header">HOME</a></li>
                             <li className="flex justify-center md:justify-start w-full mt-3 md:mt-5" onClick={()=> setIsHidden(true) }><a href="#03Tokenomics">TOKENOMICS</a></li>
                             <li className="flex justify-center md:justify-start w-full mt-3 md:mt-5" onClick={()=> setIsHidden(true) }><a href="#04Partners">PARTNERS</a></li>
@@ -82,7 +82,7 @@ export default function Header(){
 
                 {/* Основа */}
                 
-                <div className="flex flex-col md:flex-row relative z-40 md:px-2">
+                <div className="flex flex-col md:flex-row relative z-30 md:px-2">
                     
                     
                         <div className="md:w-1/2 flex flex-col justify-center -mt-[10%] md:-mt-[0%]">
@@ -109,8 +109,8 @@ export default function Header(){
 
 
                     <div className="w-1/2 max-h-1/2 flex flex-row justify-between mx-auto">
-                        <Image className="hidden md:block relative z-40" src={laika_big} alt="LAIKA MEME"/>
-                        <Image className="md:hidden block mx-auto relative z-40" src={laika_mini} alt="LAIKA MEME"/>
+                        <Image className="hidden md:block relative z-30" src={laika_big} alt="LAIKA MEME"/>
+                        <Image className="md:hidden block mx-auto relative z-30" src={laika_mini} alt="LAIKA MEME"/>
                     </div>
                 </div>
 
