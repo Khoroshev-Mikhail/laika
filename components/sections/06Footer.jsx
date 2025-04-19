@@ -34,11 +34,11 @@ export default function Footer(){
                     {/* <div className="absolute top-0 z-50 -left-1/4 w-full h-full skew-x-[45deg] border-2 border-_blue"></div> */}
 
                     
-                        <h2 strokeWidth="10" className={`${RAYDIS} _h2 relative stroke-2 _stroke2 text-center md:text-left leading-none mt-14 md:mt-4 `}>
+                        <h2 data-aos="fade-right" data-aos-duration="1500" strokeWidth="10" className={`${RAYDIS} _h2 relative stroke-2 _stroke2 text-center md:text-left leading-none mt-14 md:mt-4 `}>
                             JOIN TO LAIKA COMMUNITY
                             <div className="absolute w-full h-full top-0 left-0 _stroke">JOIN TO LAIKA COMMUNITY</div>
                         </h2>
-                        <div className=" md:pt-[10%] relative z-50">
+                        <div data-aos="fade-right" data-aos-duration="1500" className=" md:pt-[10%] relative z-50">
                             <Buttons blue/>
                         </div>
                     </div>

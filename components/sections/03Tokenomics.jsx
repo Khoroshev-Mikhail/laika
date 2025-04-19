@@ -20,32 +20,32 @@ export default function Tokenomics(){
             <div className="absolute z-10 bottom-0 left-0 bg-bottom bg-no-repeat bg-cover w-full h-full bg-[url('/img/components/03Tokenomics/bg_mobile.webp')] md:bg-[url('/img/components/03Tokenomics/bg.webp')]"></div>
             
             <div className="max-w-[1200px] mx-auto z-50 relative py-[10%] p-4">
-                <h2 className={`${RAYDIS} _h2 text-center relative _stroke2`}>
+                <h2 data-aos-delay="100" data-aos="fade-right" data-aos-duration="1500" className={`${RAYDIS} _h2 text-center relative _stroke2`}>
                     TOKENOMICS
                     <span className="absolute block w-full h-full top-0 left-0 _stroke">TOKENOMICS</span>
                 </h2>
                 <div className="grid grid-cols-1 grid-rows-6 md:grid-cols-4 md:grid-rows-3 gap-y-2.5 md:gap-4 text-[14px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px]">
-                <div className="aspect-[590/90] md:col-span-2 flex flex-row justify-between bg-[url('/img/components/03Tokenomics/1.png')] bg-no-repeat bg-left bg-contain px-5 xs:px-8 md:px-7 lg:px-8">
+                    <div data-aos="fade-right" data-aos-duration="1500" className="aspect-[590/90] md:col-span-2 flex flex-row justify-between bg-[url('/img/components/03Tokenomics/1.png')] bg-no-repeat bg-left bg-contain px-5 xs:px-8 md:px-7 lg:px-8">
                         <div className={`flex justify-center flex-col ${RAYDIS}`}>Presale (Fairlaunch)</div>
                         <div className="flex justify-center flex-col font-bold text-_purple">20%</div>
                     </div>    
-                    <div className="aspect-[590/90] md:col-span-2 flex flex-row justify-between bg-[url('/img/components/03Tokenomics/2.png')] bg-no-repeat bg-left bg-contain px-5 xs:px-8 md:px-7 lg:px-8">
+                    <div data-aos="fade-right" data-aos-duration="1500" className="aspect-[590/90] md:col-span-2 flex flex-row justify-between bg-[url('/img/components/03Tokenomics/2.png')] bg-no-repeat bg-left bg-contain px-5 xs:px-8 md:px-7 lg:px-8">
                         <div className={`flex justify-center flex-col ${RAYDIS}`}>Liquidity DEX</div>
                         <div className="flex justify-center flex-col font-bold text-_purple">40%</div>
                     </div>
-                    <div className="aspect-[590/90] md:col-span-2 flex flex-row justify-between bg-[url('/img/components/03Tokenomics/3.png')] bg-no-repeat bg-left bg-contain px-5 xs:px-8 md:px-7 lg:px-8">
+                    <div data-aos="fade-right" data-aos-duration="1500" className="aspect-[590/90] md:col-span-2 flex flex-row justify-between bg-[url('/img/components/03Tokenomics/3.png')] bg-no-repeat bg-left bg-contain px-5 xs:px-8 md:px-7 lg:px-8">
                         <div className={`flex justify-center flex-col ${RAYDIS}`}>Community & Airdrops</div>
                         <div className="flex justify-center flex-col font-bold text-_purple">5%</div>
                     </div>
-                    <div className="aspect-[590/90] md:col-span-2 flex flex-row justify-between bg-[url('/img/components/03Tokenomics/4.png')] bg-no-repeat bg-left bg-contain px-5 xs:px-8 md:px-7 lg:px-8">
+                    <div data-aos="fade-right" data-aos-duration="1500" className="aspect-[590/90] md:col-span-2 flex flex-row justify-between bg-[url('/img/components/03Tokenomics/4.png')] bg-no-repeat bg-left bg-contain px-5 xs:px-8 md:px-7 lg:px-8">
                         <div className={`flex justify-center flex-col ${RAYDIS}`}>Development Fund</div>
                         <div className="flex justify-center flex-col font-bold text-_purple">15%</div>
                     </div>
-                    <div className="aspect-[590/90] md:col-span-2  flex flex-row justify-between bg-[url('/img/components/03Tokenomics/5.png')] bg-no-repeat bg-left bg-contain px-4 sm:px-6 md:px-7 lg:px-8">
+                    <div data-aos="fade-right" data-aos-duration="1500" className="aspect-[590/90] md:col-span-2  flex flex-row justify-between bg-[url('/img/components/03Tokenomics/5.png')] bg-no-repeat bg-left bg-contain px-4 sm:px-6 md:px-7 lg:px-8">
                         <div className={`flex justify-center flex-col ${RAYDIS}`}>Marketing</div>
                         <div className="flex justify-center flex-col font-bold text-_purple">10%</div>
                     </div>
-                    <div className="aspect-[590/90] md:col-span-2 flex flex-row justify-between bg-[url('/img/components/03Tokenomics/3.png')] bg-no-repeat bg-left bg-contain px-5 xs:px-8 md:px-7 lg:px-8">
+                    <div data-aos="fade-right" data-aos-duration="1500" className="aspect-[590/90] md:col-span-2 flex flex-row justify-between bg-[url('/img/components/03Tokenomics/3.png')] bg-no-repeat bg-left bg-contain px-5 xs:px-8 md:px-7 lg:px-8">
                         <div className={`flex justify-center flex-col ${RAYDIS}`}>Team & Advisors (locked)</div>
                         <div className="flex justify-center flex-col font-bold text-_purple">5%</div>
                     </div>

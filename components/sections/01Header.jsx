@@ -22,7 +22,7 @@ export default function Header(){
             <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_right_line_mobile.webp')] md:bg-[url('/img/components/01Header/bg_right_line.webp')] bg-no-repeat bg-right bg-contain z-50"></div>
             <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_bottom_line_mobile.webp')] md:bg-[url('/img/components/01Header/bg_bottom_line.webp')] bg-no-repeat bg-bottom bg-contain z-50"></div>
             <div className="absolute w-full md:w-[120%] md:h-[120%] h-full -bottom-[70%] md:-bottom-[10%] md:-right-[15%] md:bg-right-bottom bg-[url('/img/components/01Header/earth.webp')] bg-no-repeat bg-contain z-20 opacity-70"></div>
-            <div className="absolute w-[120%] h-[120%] opacity-70 -bottom-[20%] -right-[10%]  md:-right-[25%] bg-[url('/img/components/01Header/blur2.png')] bg-no-repeat bg-contain bg-bottom z-40"></div>
+            <div className="_animate-moveUp absolute w-[120%] h-[120%] opacity-70 -bottom-[20%] -right-[10%]  md:-right-[25%] bg-[url('/img/components/01Header/blur2.png')] bg-no-repeat bg-contain bg-bottom z-40"></div>
             <div className="hidden md:block absolute w-[24px] h-[24px] top-6 left-7 bg-[url('/img/components/01Header/bg_arrow.svg')] bg-no-repeat bg-cover  z-50"></div>
             <div className="hidden md:block scale-[-1] absolute w-[24px] h-[24px] bottom-10 right-7 bg-[url('/img/components/01Header/bg_arrow.svg')] bg-no-repeat bg-cover  z-50"></div>
             <div
@@ -62,10 +62,10 @@ export default function Header(){
                         
                         <menu className={`${RAYDIS} block md:w-1/2 w-full relative z-50 text-[18px] xs:text-[20px] sm:text-[22px] md:text-[24px] lg:text-[28px] xl:text-[40px] mt-10 text-_white`}>
                             <li className="flex justify-center md:justify-start w-full" onClick={()=> setIsHidden(true) }><a href="#01Header">HOME</a></li>
-                            <li className="flex justify-center md:justify-start w-full mt-3 md:mt-5"><a href="#03Tokenomics">TOKENOMICS</a></li>
-                            <li className="flex justify-center md:justify-start w-full mt-3 md:mt-5"><a href="#04Partners">PARTNERS</a></li>
-                            <li className="flex justify-center md:justify-start w-full mt-3 md:mt-5"><a href="#05Roadmap">ROADMAP</a></li>
-                            <li className="flex justify-center md:justify-start w-full mt-3 md:mt-5"><a href="#06Footer">CONTACTS</a></li>
+                            <li className="flex justify-center md:justify-start w-full mt-3 md:mt-5" onClick={()=> setIsHidden(true) }><a href="#03Tokenomics">TOKENOMICS</a></li>
+                            <li className="flex justify-center md:justify-start w-full mt-3 md:mt-5" onClick={()=> setIsHidden(true) }><a href="#04Partners">PARTNERS</a></li>
+                            <li className="flex justify-center md:justify-start w-full mt-3 md:mt-5" onClick={()=> setIsHidden(true) }><a href="#05Roadmap">ROADMAP</a></li>
+                            <li className="flex justify-center md:justify-start w-full mt-3 md:mt-5" onClick={()=> setIsHidden(true) }><a href="#06Footer">CONTACTS</a></li>
                             <li className="flex justify-center md:justify-start w-full mt-3 md:mt-5 py-[10px] md:py-[60px] xl:py-[100px] ">
                                 <Social black/>
                             </li>
@@ -82,27 +82,27 @@ export default function Header(){
 
                 {/* Основа */}
                 
-                <div className="flex flex-col md:flex-row overflow-hidden relative z-40 md:px-2">
+                <div className="flex flex-col md:flex-row relative z-40 md:px-2">
                     
                     
                         <div className="md:w-1/2 flex flex-col justify-center -mt-[10%] md:-mt-[0%]">
-                            <div className="hidden md:flex">
+                            <div data-aos="fade-right" data-aos-duration="1500" className="hidden md:flex">
                                 <Social />
                             </div>
                             
-                            <h1 className={`${RAYDIS} relative _stroke2 mt-[76px] sm:mt-[100px] md:mt-[30px] font-bold mx-3 text-[60px] xs:text-[70px] sm:text-[80px] md:text-[90px] lg:text-[100px] xl:text-[110px] leading-[30px] xs:leading-[45px] sm:leading-[50px] md:leading-[60px] lg:leading-[70px] xl:leading-[90px]`}>
+                            <h1 data-aos="fade-right" data-aos-duration="1500" className={`${RAYDIS} relative _stroke2 mt-[76px] sm:mt-[100px] md:mt-[30px] font-bold mx-3 text-[60px] xs:text-[70px] sm:text-[80px] md:text-[90px] lg:text-[100px] xl:text-[110px] leading-[30px] xs:leading-[45px] sm:leading-[50px] md:leading-[60px] lg:leading-[70px] xl:leading-[90px]`}>
                                 LAIKA<br /> <span className="_30_90 leading-[40px] md:leading-none">MEME</span>
                                 <div className="absolute block w-full h-full top-0 left-0 _stroke">
                                     LAIKA<br /> <span className="_30_90 leading-[40px] md:leading-none">MEME</span>
                                 </div>
                             </h1>
 
-                            <div className="pt-[10px] leading-none md:w-full lg:w-2/3 text-[14px] xs:text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] xl:text-[24px]">
+                            <div data-aos="fade-right" data-aos-duration="1500" className="pt-[10px] leading-none md:w-full lg:w-2/3 text-[14px] xs:text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] xl:text-[24px]">
                                 <Image className="inline mr-2" src={arrow} alt="->" />
                                 Laika, once the first dog in space, is back — not just on Earth, <span className="text-_purple">but on the blockchain.</span> Reborn as a meme-based space icon on Solana, she now roams the digital galaxy, leading the charge to combine decentralization with AI. 
                             </div>
 
-                            <div className="pt-[10px] xs:pt-[20px] sm:pt-[30px] md:pt-[40px] lg:pt-[50px] xl:pt-[70px]">
+                            <div data-aos="fade-right" data-aos-duration="1500" className="pt-[10px] xs:pt-[20px] sm:pt-[30px] md:pt-[40px] lg:pt-[50px] xl:pt-[70px]">
                                 <Buttons />
                             </div>
                         </div>

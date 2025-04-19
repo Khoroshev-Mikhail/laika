@@ -11,22 +11,20 @@ import { RAYDIS } from "@/pages/_app";
 export default function Partners(){
     return (
         <section id="04Partners" className="_section relative overflow-hidden py-[10%]">
-
-
             <div className="absolute top-0 left-0 w-full h-full bg-cover md:bg-cover bg-no-repeat md:bg-[url('/img/components/05Partners/bg.png')] bg-[url('/img/components/05Partners/bg_mobile.png')] bg-center md:bg-left-top z-10"></div>
             {/* <div className="absolute top-0 left-0 w-full h-full bg-contain bg-no-repeat bg-[url('/img/components/05Partners/bg_2.png')] bg-left-top z-10"></div> */}
             
             <div  style={{
-    WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)',
-    WebkitMaskRepeat: 'no-repeat',
-    WebkitMaskSize: '100% 100%',
-    maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0) 100%)',
-    maskRepeat: 'no-repeat',
-    maskSize: '100% 100%',
-  }}
-  className="absolute top-0 left-0 w-full h-full bg-contain bg-no-repeat md:bg-[url('/img/components/05Partners/grid_top.png')] bg-[url('/img/components/05Partners/grid_top_mobile.png')] z-10"></div>
+                WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)',
+                WebkitMaskRepeat: 'no-repeat',
+                WebkitMaskSize: '100% 100%',
+                maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0) 100%)',
+                maskRepeat: 'no-repeat',
+                maskSize: '100% 100%',
+            }}
+            className="absolute top-0 left-0 w-full h-full bg-contain bg-no-repeat md:bg-[url('/img/components/05Partners/grid_top.png')] bg-[url('/img/components/05Partners/grid_top_mobile.png')] z-10"></div>
             <div 
-             style={{
+                style={{
                 WebkitMaskImage: 'linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%)',
                 WebkitMaskRepeat: 'no-repeat',
                 WebkitMaskSize: '100% 100%',
@@ -42,7 +40,7 @@ export default function Partners(){
 
 
             <div className="_wrapper relative z-50">
-                <h2 className={`${RAYDIS} _h2 text-center w-full relative _stroke2`}>
+                <h2 data-aos="fade-right" data-aos-duration="1500" className={`${RAYDIS} _h2 text-center w-full relative _stroke2`}>
                     PARTNERS
                     <span className="absolute block w-full h-full top-0 left-0 _stroke">PARTNERS</span>
                 </h2>

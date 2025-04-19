@@ -5,6 +5,7 @@ import Tokenomics from "@/components/sections/03Tokenomics";
 import Partners from "@/components/sections/05Partners";
 import Footer from '@/components/sections/06Footer';
 import Roadmap from '@/components/sections/04Roadmap';
+import PopUp from '@/components/sections/00PopUp';
 
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
             <link rel="shortcut icon" href="/img/favicon.png" />
         </Head>
 
+        <PopUp />
         <Header/>
         <About/>
         <Tokenomics/>

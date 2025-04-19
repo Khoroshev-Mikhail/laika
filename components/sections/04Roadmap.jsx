@@ -16,7 +16,7 @@ export default function Roadmap(){
             <div className="_animate-roadmapDown z-20 md:hidden w-full h-[100%] absolute right-0 bg-contain bg-no-repeat bg-right bg-[url('/img/components/eclipse_mobile.png')]"></div>
 
             <div className="_wrapper">
-                <h2 className={`${RAYDIS} _h2 !text-left relative _stroke2`}>
+                <h2 data-aos="fade-right" data-aos-duration="1500" className={`${RAYDIS} _h2 !text-left relative _stroke2`}>
                     ROADMAP
                     <span className="absolute block w-full h-full top-0 left-0 _stroke">ROADMAP</span>
                 </h2>
