@@ -17,9 +17,9 @@ export default function Header(){
     return (
         <section id="01Header" className="_section relative overflow-hidden">
             <div className="absolute w-full h-full top-0 bg-[url('/img/components/01Header/bg_stars.webp')] bg-no-repeat bg-center bg-cover z-10"></div>
-            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_left_line_mobile.webp')] md:bg-[url('/img/components/01Header/bg_left_line.webp')] bg-no-repeat bg-left bg-contain z-40"></div>
-            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_top_line_mobile.webp')] md:bg-[url('/img/components/01Header/bg_top_line.webp')] bg-no-repeat bg-top bg-contain z-40"></div>
-            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_right_line_mobile.webp')] md:bg-[url('/img/components/01Header/bg_right_line.webp')] bg-no-repeat bg-right bg-contain z-40"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_left_line_mobile.webp')] md:bg-[url('/img/components/01Header/bg_left_line.webp')] bg-no-repeat bg-left bg-contain z-30"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_top_line_mobile.webp')] md:bg-[url('/img/components/01Header/bg_top_line.webp')] bg-no-repeat bg-top bg-contain z-30"></div>
+            <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_right_line_mobile.webp')] md:bg-[url('/img/components/01Header/bg_right_line.webp')] bg-no-repeat bg-right bg-contain z-30"></div>
             <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_bottom_line_mobile.webp')] md:bg-[url('/img/components/01Header/bg_bottom_line.webp')] bg-no-repeat bg-bottom bg-contain z-40"></div>
             <div className="absolute w-full md:w-[120%] md:h-[120%] h-full -bottom-[70%] md:-bottom-[10%] md:-right-[15%] md:bg-right-bottom bg-[url('/img/components/01Header/earth.webp')] bg-no-repeat bg-contain z-20 opacity-70"></div>
             <div className="_animate-moveUp absolute w-[120%] h-[120%] opacity-70 -bottom-[20%] -right-[10%]  md:-right-[25%] bg-[url('/img/components/01Header/blur2.png')] bg-no-repeat bg-contain bg-bottom z-30"></div>
@@ -35,7 +35,7 @@ export default function Header(){
                 maskSize: '100% 100%',
             }}
             className="scale-y-[-1] absolute z-10 top-0 bg-contain w-full h-full bg-[url('/img/components/02About/grid.webp')] bg-no-repeat">
-        </div>
+            </div>
             
             <div className="_wrapper flex flex-col">
 
@@ -82,7 +82,7 @@ export default function Header(){
 
                 {/* Основа */}
                 
-                <div className="flex flex-col md:flex-row relative z-30 md:px-2">
+                <div className="flex flex-col md:flex-row relative z-40 md:px-2">
                     
                     
                         <div className="md:w-1/2 flex flex-col justify-center -mt-[10%] md:-mt-[0%]">
@@ -109,8 +109,8 @@ export default function Header(){
 
 
                     <div className="w-1/2 max-h-1/2 flex flex-row justify-between mx-auto">
-                        <Image className="hidden md:block relative z-30" src={laika_big} alt="LAIKA MEME"/>
-                        <Image className="md:hidden block mx-auto relative z-30" src={laika_mini} alt="LAIKA MEME"/>
+                        <Image className="hidden md:block relative z-20" src={laika_big} alt="LAIKA MEME"/>
+                        <Image className="md:hidden block mx-auto relative z-20" src={laika_mini} alt="LAIKA MEME"/>
                     </div>
                 </div>
 
