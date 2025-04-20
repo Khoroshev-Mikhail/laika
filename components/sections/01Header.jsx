@@ -41,7 +41,7 @@ export default function Header(){
 
                 {/* Меню */}
                 <div className="flex justify-between mt-4 md:mt-8 xl:mt-10">
-                    <div className="">
+                    <div className="relative z-30">
                             <div className="flex md:hidden">
                                 <Social />
                             </div>
@@ -55,7 +55,7 @@ export default function Header(){
 
 
                 {/* Выдвижное меню */}
-                <div className={`${isHidden ? 'hidden' : 'block'} absolute h-svh md:h-auto !z-40 top-0 left-0 w-full  bg-gradient-to-br from-[#3756C7] to-[#000F67] rounded-b-2xl `}>
+                <div className={`${isHidden ? 'hidden' : 'block'} absolute h-svh md:h-auto z-40 top-0 left-0 w-full  bg-gradient-to-br from-[#3756C7] to-[#000F67] rounded-b-2xl `}>
 
                     <div className="relative pt-4 sm:pt-4 md:pt-12 xl:pt-20 flex flex-col justify-between h-full md:flex-row _wrapper">
                         <Image className="absolute z-40 top-5 md:top-10 right-5 cursor-pointer w-[30px] h-[30px] sm:w-[49px] sm:h-[49px]" src={ cross } alt="menu-toggle" onClick={()=> setIsHidden(true) }/>
