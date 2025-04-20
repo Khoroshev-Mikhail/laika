@@ -28,7 +28,7 @@ export default function Footer(){
                 <div className="absolute w-[120%] h-[120%] opacity-70 -bottom-[20%] -right-[40%] bg-[url('/img/components/01Header/blur2.webp')] bg-no-repeat bg-contain bg-bottom z-20"></div>
                 <div className="md:hidden absolute w-[110%] h-[110%] -right-1/4 -bottom-[14%] xs:w-[90%] xs:h-[90%] bg-[url('/img/components/07Footer/earth_mobile.webp')] bg-contain bg-no-repeat bg-right-bottom -z-20"> </div> 
                 
-                    <div className="flex flex-col relative z-40 sm:justify-between md:pt-[70px] md:pb-[50px] md:pl-[50px] xs:gap-y-5 overflow-hidden">
+                    <div className="flex flex-col relative px-5 z-40 sm:justify-between md:pt-[70px] md:pb-[50px] md:pl-[50px] xs:gap-y-5 overflow-hidden">
 
                     
                     {/* <div className="absolute top-0 z-40 -left-1/4 w-full h-full skew-x-[45deg] border-2 border-_blue"></div> */}

@@ -15,7 +15,7 @@ import Social from "../elements/Social";
 export default function Header(){
     const [ isHidden, setIsHidden ] = useState(true)
     return (
-        <section id="01Header" className="_section relative overflow-hidden ">
+        <section id="01Header" className="_section relative overflow-hidden h-screen md:h-auto">
             <div className="absolute w-full h-full top-0 bg-[url('/img/components/01Header/bg_stars.webp')] bg-no-repeat bg-center bg-cover z-10"></div>
             <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_left_line_mobile.webp')] md:bg-[url('/img/components/01Header/bg_left_line.webp')] bg-no-repeat bg-left bg-contain z-30"></div>
             <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_top_line_mobile.webp')] md:bg-[url('/img/components/01Header/bg_top_line.webp')] bg-no-repeat bg-top bg-contain z-30"></div>
@@ -37,7 +37,7 @@ export default function Header(){
             className="scale-y-[-1] absolute z-10 top-0 bg-contain w-full h-full bg-[url('/img/components/02About/grid.webp')] bg-no-repeat">
             </div>
             
-            <div className="_wrapper flex flex-col">
+            <div className="_wrapper flex flex-col h-full w-full">
 
                 {/* Меню */}
                 <div className="flex justify-between mt-4 md:mt-8 xl:mt-10">
@@ -55,10 +55,10 @@ export default function Header(){
 
 
                 {/* Выдвижное меню */}
-                <div className={`${isHidden ? 'hidden' : 'block'} absolute h-screen z-40 top-0 left-0 w-full  bg-gradient-to-br from-[#3756C7] to-[#000F67] rounded-b-2xl `}>
+                <div className={`${isHidden ? 'hidden' : 'block'} absolute h-screen md:h-auto !z-40 top-0 left-0 w-full  bg-gradient-to-br from-[#3756C7] to-[#000F67] rounded-b-2xl `}>
 
-                    <div className="relative py-4 sm:py-4 md:py-12 xl:py-20 flex flex-col md:flex-row _wrapper">
-                        <Image className="absolute top-5 md:top-10 right-5 cursor-pointer w-[30px] h-[30px] sm:w-[49px] sm:h-[49px]" src={ cross } alt="menu-toggle" onClick={()=> setIsHidden(true) }/>
+                    <div className="relative pt-4 sm:pt-4 md:pt-12 xl:pt-20 flex flex-col justify-between h-full md:flex-row _wrapper">
+                        <Image className="absolute z-40 top-5 md:top-10 right-5 cursor-pointer w-[30px] h-[30px] sm:w-[49px] sm:h-[49px]" src={ cross } alt="menu-toggle" onClick={()=> setIsHidden(true) }/>
                         
                         <menu className={`${RAYDIS} block md:w-1/2 w-full relative z-40 text-[18px] xs:text-[20px] sm:text-[22px] md:text-[24px] lg:text-[28px] xl:text-[40px] mt-10 text-_white`}>
                             <li className="flex justify-center md:justify-start w-full" onClick={()=> setIsHidden(true) }><a href="#01Header">HOME</a></li>
@@ -70,7 +70,7 @@ export default function Header(){
                                 <Social black/>
                             </li>
                         </menu>
-                        <div className="w-full md:w-1/2 flex flex-col justify-center relative">
+                        <div className="w-full md:w-1/2 flex flex-col justify-end relative">
                             <Image src={laika_mini} alt="" className="block w-1/2 mx-auto md:w-full" />
                             <Image src={earth} alt="" className="block absolute opacity-50 w-full -bottom-[10%] -right-1/4 md:scale-[2] md:bottom-0 -z-20" />
                         </div>
@@ -82,7 +82,7 @@ export default function Header(){
 
                 {/* Основа */}
                 
-                <div className="flex flex-col md:flex-row relative z-30 md:px-2 ">
+                <div className="flex flex-col justify-between h-full  md:flex-row relative z-30 md:px-2 ">
                     
                     
                         <div className="md:w-1/2 flex flex-col justify-center -mt-[10%] md:-mt-[0%]">
@@ -90,26 +90,26 @@ export default function Header(){
                                 <Social />
                             </div>
                             
-                            <h1 data-aos="fade-right" data-aos-duration="1500" className={`${RAYDIS} relative _stroke2 mt-[76px] sm:mt-[100px] md:mt-[30px] font-bold mx-3 text-[60px] xs:text-[70px] sm:text-[80px] md:text-[90px] lg:text-[100px] xl:text-[110px] leading-[30px] xs:leading-[45px] sm:leading-[50px] md:leading-[60px] lg:leading-[70px] xl:leading-[90px]`}>
+                            <h1 data-aos="fade-right" data-aos-duration="1500" className={`${RAYDIS} relative _stroke2 mt-[100px] sm:mt-[100px] md:mt-[30px] font-bold mx-3 text-[60px] xs:text-[70px] sm:text-[80px] md:text-[90px] lg:text-[100px] xl:text-[110px] leading-[30px] xs:leading-[45px] sm:leading-[50px] md:leading-[60px] lg:leading-[70px] xl:leading-[90px]`}>
                                 LAIKA<br /> <span className="_30_90 leading-[40px] md:leading-none">MEME</span>
                                 <div className="absolute block w-full h-full top-0 left-0 _stroke">
                                     LAIKA<br /> <span className="_30_90 leading-[40px] md:leading-none">MEME</span>
                                 </div>
                             </h1>
 
-                            <div data-aos="fade-right" data-aos-duration="1500" className=" pt-[30px] leading-none md:w-full lg:w-2/3 text-[14px] xs:text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] xl:text-[24px]">
+                            <div data-aos="fade-right" data-aos-duration="1500" className=" pt-[30px] leading-none md:w-full lg:w-2/3 text-[18px] xs:text-[20px] sm:text-[22px] md:text-[22px] lg:text-[24px] xl:text-[24px]">
                                 <Image className="inline mr-2" src={arrow} alt="->" />
                                 Laika, once the first dog in space, is back — not just on Earth, <span className="text-_purple">but on the blockchain.</span> Reborn as a meme-based space icon on Solana, she now roams the digital galaxy, leading the charge to combine decentralization with AI. 
                             </div>
 
-                            <div data-aos="fade-right" data-aos-duration="1500" className="pt-[10px] xs:pt-[20px] sm:pt-[30px] md:pt-[40px] lg:pt-[50px] xl:pt-[70px]">
+                            <div data-aos="fade-right" data-aos-duration="1500" className="pt-[30px] xs:pt-[20px] sm:pt-[30px] md:pt-[40px] lg:pt-[50px] xl:pt-[70px]">
                                 <Buttons />
                             </div>
                         </div>
 
 
                     <div className="w-1/2 max-h-1/2 flex flex-row justify-between mx-auto relative z-20">
-                        <Image className="hidden md:block relative z-20" src={laika_big} alt="LAIKA MEME"/>
+                        <Image className="hidden md:block relative z-20 h-auto" src={laika_big} alt="LAIKA MEME"/>
                         <Image className="md:hidden block mx-auto relative z-20" src={laika_mini} alt="LAIKA MEME"/>
                     </div>
                 </div>
