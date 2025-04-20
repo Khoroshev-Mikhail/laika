@@ -55,7 +55,7 @@ export default function Header(){
 
 
                 {/* Выдвижное меню */}
-                <div className={`${isHidden ? 'hidden' : 'block'} absolute z-40 top-0 left-0 w-full  bg-gradient-to-br from-[#3756C7] to-[#000F67] rounded-b-2xl `}>
+                <div className={`${isHidden ? 'hidden' : 'block'} absolute h-screen z-40 top-0 left-0 w-full  bg-gradient-to-br from-[#3756C7] to-[#000F67] rounded-b-2xl `}>
 
                     <div className="relative py-4 sm:py-4 md:py-12 xl:py-20 flex flex-col md:flex-row _wrapper">
                         <Image className="absolute top-5 md:top-10 right-5 cursor-pointer w-[30px] h-[30px] sm:w-[49px] sm:h-[49px]" src={ cross } alt="menu-toggle" onClick={()=> setIsHidden(true) }/>
