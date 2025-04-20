@@ -15,7 +15,7 @@ import Social from "../elements/Social";
 export default function Header(){
     const [ isHidden, setIsHidden ] = useState(true)
     return (
-        <section id="01Header" className="_section relative overflow-hidden h-screen md:h-auto">
+        <section id="01Header" className="_section relative overflow-hidden h-svh md:h-auto">
             <div className="absolute w-full h-full top-0 bg-[url('/img/components/01Header/bg_stars.webp')] bg-no-repeat bg-center bg-cover z-10"></div>
             <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_left_line_mobile.webp')] md:bg-[url('/img/components/01Header/bg_left_line.webp')] bg-no-repeat bg-left bg-contain z-30"></div>
             <div className="absolute top-0 left-0 w-full h-full bg-[url('/img/components/01Header/bg_top_line_mobile.webp')] md:bg-[url('/img/components/01Header/bg_top_line.webp')] bg-no-repeat bg-top bg-contain z-30"></div>
@@ -55,7 +55,7 @@ export default function Header(){
 
 
                 {/* Выдвижное меню */}
-                <div className={`${isHidden ? 'hidden' : 'block'} absolute h-screen md:h-auto !z-40 top-0 left-0 w-full  bg-gradient-to-br from-[#3756C7] to-[#000F67] rounded-b-2xl `}>
+                <div className={`${isHidden ? 'hidden' : 'block'} absolute h-svh md:h-auto !z-40 top-0 left-0 w-full  bg-gradient-to-br from-[#3756C7] to-[#000F67] rounded-b-2xl `}>
 
                     <div className="relative pt-4 sm:pt-4 md:pt-12 xl:pt-20 flex flex-col justify-between h-full md:flex-row _wrapper">
                         <Image className="absolute z-40 top-5 md:top-10 right-5 cursor-pointer w-[30px] h-[30px] sm:w-[49px] sm:h-[49px]" src={ cross } alt="menu-toggle" onClick={()=> setIsHidden(true) }/>
