@@ -44,20 +44,20 @@ export default function About(){
                                 <div className="text-_blue text-[14px] md:text-[16px]">Experience the Laika</div>
                             </div>
                         </div>
-                        <div data-aos-delay="50" data-aos="fade-right" data-aos-duration="1500" className="col-span-1 row-span-1 flex flex-row justify-start p-[12px] md:p-[12px] gap-x-3 xs:bg-[url('/img/components/02About/bg_line.png')] bg-[url('/img/components/02About/bg_line_mobile.png')] aspect-[280/60] xs:aspect-[552/79] bg-no-repeat bg-left bg-contain cursor-pointer" onClick={()=>{setIsVisible(true)}}>
+                        <a href="https://laika-ai-meme.gitbook.io/laika-ai-meme-v1.1" data-aos-delay="50" data-aos="fade-right" data-aos-duration="1500" className="col-span-1 row-span-1 flex flex-row justify-start p-[12px] md:p-[12px] gap-x-3 xs:bg-[url('/img/components/02About/bg_line.png')] bg-[url('/img/components/02About/bg_line_mobile.png')] aspect-[280/60] xs:aspect-[552/79] bg-no-repeat bg-left bg-contain cursor-pointer" >
                             <Image className="block" src={icon_2} alt="" />
                             <div className="flex flex-col justify-center">
                                 <div className="text-white text-[20px] md:text-[22px] lg:text-[24px] leading-none">Whitepaper</div>
                                 <div className="text-_blue text-[14px] md:text-[16px]">View the whitepaper</div>
                             </div>
-                        </div>
-                        <div data-aos-delay="100" data-aos="fade-right" data-aos-duration="1500" className="col-span-1 row-span-1 flex flex-row justify-start p-[12px] md:p-[12px] gap-x-3 xs:bg-[url('/img/components/02About/bg_line.png')] bg-[url('/img/components/02About/bg_line_mobile.png')] aspect-[280/60] xs:aspect-[552/79] bg-no-repeat bg-left bg-contain cursor-pointer" onClick={()=>{setIsVisible(true)}}>
+                        </a>
+                        <a href="https://github.com/laika-ai-meme/laika-ai" data-aos-delay="100" data-aos="fade-right" data-aos-duration="1500" className="col-span-1 row-span-1 flex flex-row justify-start p-[12px] md:p-[12px] gap-x-3 xs:bg-[url('/img/components/02About/bg_line.png')] bg-[url('/img/components/02About/bg_line_mobile.png')] aspect-[280/60] xs:aspect-[552/79] bg-no-repeat bg-left bg-contain cursor-pointer">
                             <Image className="block" src={icon_3} alt="" />
                             <div className="flex flex-col justify-center">
                                 <div className="text-white text-[20px] md:text-[22px] lg:text-[24px] leading-none">Github</div>
                                 <div className="text-_blue text-[14px] md:text-[16px]">Brouse the source code</div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>        
 
