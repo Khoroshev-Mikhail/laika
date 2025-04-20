@@ -53,9 +53,9 @@ export default function Tokenomics(){
                 </div>
                 <div className="w-full mx-auto text-center pt-[15%] pb-[20%] md:pt-0 md:pb-0 md:mt-[30px] text-[16px] sm:text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px]">
                     <Image className="block md:inline md:mr-2 mx-auto" src={arrow} alt="->" />
-                    LAIKA Token (SOLANA):  
+                    LAIKA Token (SOLANA):   
                     <a href="https://solscan.io/token/2hJBZzXhuX8XguKfQQCiwMC9jPfKpLtygYXEFZjAKR44" className="underline">
-                         2hJBZzXhuX8XguKfQQCiwMC9jPfKpLtygYXEFZjAKR44
+                        2hJBZzXhuX8XguKfQQCiwM<wbr/>C9jPfKpLtygYXEFZjAKR44
                     </a>
                 </div>
             </div>
