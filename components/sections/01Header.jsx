@@ -97,7 +97,7 @@ export default function Header(){
                                 </div>
                             </h1>
 
-                            <div data-aos="fade-right" data-aos-duration="1500" className="pt-[10px] leading-none md:w-full lg:w-2/3 text-[14px] xs:text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] xl:text-[24px]">
+                            <div data-aos="fade-right" data-aos-duration="1500" className=" pt-[30px] leading-none md:w-full lg:w-2/3 text-[14px] xs:text-[16px] sm:text-[18px] md:text-[20px] lg:text-[24px] xl:text-[24px]">
                                 <Image className="inline mr-2" src={arrow} alt="->" />
                                 Laika, once the first dog in space, is back — not just on Earth, <span className="text-_purple">but on the blockchain.</span> Reborn as a meme-based space icon on Solana, she now roams the digital galaxy, leading the charge to combine decentralization with AI. 
                             </div>
