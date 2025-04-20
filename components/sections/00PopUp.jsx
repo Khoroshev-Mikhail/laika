@@ -53,7 +53,7 @@ export default function PopUp({setIsVisible}) {
   return (
     <section
       id="00PopUp"
-      className="_section fixed top-0 z-50 overflow-hidden h-screen bg-[url('/img/components/00PopUp/bg_mobile.png')] md:bg-[url('/img/components/00PopUp/bg.png')] bg-cover bg-no-repeat bg-[#000]"
+      className="_section fixed top-0 z-50 overflow-hidden h-svh bg-[url('/img/components/00PopUp/bg_mobile.png')] md:bg-[url('/img/components/00PopUp/bg.png')] bg-cover bg-no-repeat bg-[#000]"
     >
       <div className="p-5 flex justify-center items-center w-full h-full">
         <div className="p-5 w-full h-full max-w-[900px] mx-auto rounded-lg border-[1px] border-[#5471D8] flex flex-col relative">
