@@ -82,7 +82,7 @@ export default function Header(){
 
                 {/* Основа */}
                 
-                <div className="flex flex-col md:flex-row relative z-40 md:px-2 ">
+                <div className="flex flex-col md:flex-row relative z-30 md:px-2 ">
                     
                     
                         <div className="md:w-1/2 flex flex-col justify-center -mt-[10%] md:-mt-[0%]">
